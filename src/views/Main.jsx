@@ -1,5 +1,6 @@
 import { Container, Grid, makeStyles } from '@material-ui/core';
-import Search from './Search';
+import Search from '../components/Search';
+import ProductCard from '../components/ProductCard';
 
 const useStyles = makeStyles({
   background: {
@@ -8,7 +9,7 @@ const useStyles = makeStyles({
     width: '100vw',
   },
   container: {
-    padding: '10px',
+    paddingTop: '20px',
   },
 });
 
@@ -17,8 +18,13 @@ function Main() {
   return (
     <div className={classes.background}>
       <Container maxWidth="sm" className={classes.container}>
-        <Grid>
-          <Search />
+        <Grid container item xs={12} spacing={2}>
+          <Grid item xs={12}>
+            <Search />
+          </Grid>
+          <Grid item xs={12}>
+            <ProductCard />
+          </Grid>
         </Grid>
       </Container>
     </div>
