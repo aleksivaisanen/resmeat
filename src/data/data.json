@@ -3,6 +3,7 @@
     "farmCode": 1,
     "farmName": "McDonald farm",
     "farmDescription": "Nestled at the base of Walden’s ridge in northern Hamilton County, the farm has been home to the McDonald family for eight generations, and holds a special place in the hearts of all McDonald family members who have spent time there. As a working farm, nearly 700 acres are used to cultivate hay and cattle.",
+    "farmLocation": "Turku",
     "broiler": {
       "nAnimals": 455000,
       "Total carbon footprint of the farm CO2e": 1889525,
@@ -50,6 +51,7 @@
     "farmCode": 2,
     "farmName": "Silenius farm",
     "farmDescription": "Nestled at the base of Walden’s ridge in northern Hamilton County, the farm has been home to the Silenius family for eight generations, and holds a special place in the hearts of all Silenius family members who have spent time there. As a working farm, nearly 800 acres are used to cultivate hay and cattle.",
+    "farmLocation": "Joensuu",
     "broiler": {
       "nAnimals": 433000,
       "Total carbon footprint of the farm CO2e": 1835022,
@@ -97,6 +99,7 @@
     "farmCode": 3,
     "farmName": "Väisänen farm",
     "farmDescription": "Nestled at the base of Walden’s ridge in northern Hamilton County, the farm has been home to the Väisänen family for nine generations, and holds a special place in the hearts of all Väisänen family members who have spent time there. As a working farm, nearly 500 acres are used to cultivate hay and cattle.",
+    "farmLocation": "Lappeenranta",
     "broiler": {
       "nAnimals": 495000,
       "Total carbon footprint of the farm CO2e": 1699024,
@@ -144,6 +147,7 @@
     "farmCode": 4,
     "farmName": "Lappalainen farm",
     "farmDescription": "Nestled at the base of Walden’s ridge in northern Hamilton County, the farm has been home to the Lappalainen family for nine generations, and holds a special place in the hearts of all Lappalainen family members who have spent time there. As a working farm, nearly 600 acres are used to cultivate hay and cattle.",
+    "farmLocation": "Pori",
     "broiler": {
       "nAnimals": 450000,
       "Total carbon footprint of the farm CO2e": 2562468,
