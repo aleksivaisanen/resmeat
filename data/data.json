@@ -13,8 +13,8 @@
       "Manure system": 16.3,
       "Energy": 6.4,
       "Others": 9.3,
-      "dWater": 2825.5,
-      "wWater": 210,
+      "drinkWater": 2825.5,
+      "washWater": 210,
       "water": 3035.5
     },
     "pork": {
@@ -27,7 +27,9 @@
       "Manure system": 14.1,
       "Animal digestion": 2.4,
       "Transport": 0.8,
-      "water": 2550
+      "drinkWater": 2825.5,
+      "washWater": 1210,
+      "water": 4035.5
     },
     "beef": {
       "nAnimals": 800,
@@ -39,8 +41,9 @@
       "Production of calves purchased outside the farm": 0.44,
       "Energy": 0.24,
       "Others": 0.03,
-      "water": 18000,
-      "dWater": 18000
+      "drinkWater": 4825.5,
+      "washWater": 2210,
+      "water": 7035.5
     }
   },
   {
@@ -58,8 +61,8 @@
       "Energy": 2.7,
       "Others": 10,
       "water": 2801.5,
-      "dWater": 2611.5,
-      "wWater": 190
+      "drinkWater": 2611.5,
+      "washWater": 190
     },
     "pork": {
       "nAnimals": 4330,
@@ -71,7 +74,9 @@
       "Manure system": 21.7,
       "Animal digestion": 5.2,
       "Transport": 1.2,
-      "water": 2550
+      "drinkWater": 4825.5,
+      "washWater": 2210,
+      "water": 7035.5
     },
     "beef": {
       "nAnimals": 2330,
@@ -83,8 +88,9 @@
       "Production of calves purchased outside the farm": 0.46,
       "Energy": 0.45,
       "Others": 0.07,
-      "water": 3500,
-      "dWater": 3500
+      "drinkWater": 3825.5,
+      "washWater": 2210,
+      "water": 6035.5
     }
   },
   {
@@ -102,8 +108,8 @@
       "Energy": 2.4,
       "Others": 9.2,
       "water": 3200,
-      "dWater": 3000,
-      "wWater": 200
+      "drinkWater": 3000,
+      "washWater": 200
     },
     "pork": {
       "nAnimals": 4950,
@@ -115,7 +121,9 @@
       "Manure system": 24.7,
       "Animal digestion": 6,
       "Transport": 1.1,
-      "water": 2900
+      "water": 1200,
+      "drinkWater": 1000,
+      "washWater": 200
     },
     "beef": {
       "nAnimals": 2950,
@@ -128,7 +136,8 @@
       "Energy": 0.36,
       "Others": 0.04,
       "water": 3700,
-      "dWater": 3700
+      "drinkWater": 2700,
+      "washWater": 1000
     }
   },
   {
@@ -146,8 +155,8 @@
       "Energy": 2.4,
       "Others": 9.3,
       "water": 2998,
-      "dWater": 2788,
-      "wWater": 210
+      "drinkWater": 2788,
+      "washWater": 210
     },
     "pork": {
       "nAnimals": 4500,
@@ -159,7 +168,9 @@
       "Manure system": 23.7,
       "Animal digestion": 5.8,
       "Transport": 1,
-      "water": 2470
+      "water": 3700,
+      "drinkWater": 2700,
+      "washWater": 1000
     },
     "beef": {
       "nAnimals": 2500,
@@ -171,8 +182,9 @@
       "Production of calves purchased outside the farm": 0.41,
       "Energy": 0.35,
       "Others": 0.04,
-      "water": 3700,
-      "dWater": 3700
+      "drinkWater": 4825.5,
+      "washWater": 2210,
+      "water": 7035.5
     }
   }
 ]
