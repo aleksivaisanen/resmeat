@@ -1,0 +1,142 @@
+[
+    [
+      {
+        "Farm code": 1,
+        "Production type": "broiler",
+        "Number of animals": 455000,
+        "Use of water": 3035.5,
+        "Drinking water": 2825.5,
+        "Wash etc": 210
+      },
+      {
+        "Farm code": 2,
+        "Production type": "broiler",
+        "Number of animals": 433000,
+        "Use of water": 2801.5,
+        "Drinking water": 2611.5,
+        "Wash etc": 190
+      },
+      {
+        "Farm code": 3,
+        "Production type": "broiler",
+        "Number of animals": 495000,
+        "Use of water": 3200,
+        "Drinking water": 3000,
+        "Wash etc": 200
+      },
+      {
+        "Farm code": 4,
+        "Production type": "broiler",
+        "Number of animals": 450000,
+        "Use of water": 2998,
+        "Drinking water": 2788,
+        "Wash etc": 210
+      },
+      {
+        "Farm code": 5,
+        "Production type": "broiler",
+        "Number of animals": 452000,
+        "Use of water": 3010,
+        "Drinking water": 2840,
+        "Wash etc": 170
+      },
+      {
+        "Farm code": 6,
+        "Production type": "broiler",
+        "Number of animals": 470000,
+        "Use of water": 3244,
+        "Drinking water": 3044,
+        "Wash etc": 200
+      },
+      {
+        "Farm code": 7,
+        "Production type": "broiler",
+        "Number of animals": 425000,
+        "Use of water": 2800,
+        "Drinking water": 2610,
+        "Wash etc": 190
+      },
+      {
+        "Farm code": 8,
+        "Production type": "broiler",
+        "Number of animals": 420000,
+        "Use of water": 2750,
+        "Drinking water": 2540,
+        "Wash etc": 210
+      },
+      {
+        "Farm code": 9,
+        "Production type": "broiler",
+        "Number of animals": 456000,
+        "Use of water": 3100,
+        "Drinking water": 2900,
+        "Wash etc": 200
+      },
+      {
+        "Farm code": 10,
+        "Production type": "broiler",
+        "Number of animals": 455000,
+        "Use of water": 2900,
+        "Drinking water": 2670,
+        "Wash etc": 230
+      },
+      {
+        "Farm code": 11,
+        "Production type": "beef*",
+        "Number of animals": 800,
+        "Use of water": 18000,
+        "Drinking water": 18000
+      },
+      {
+        "Farm code": 12,
+        "Production type": "beef*",
+        "Number of animals": 180,
+        "Use of water": 1800,
+        "Drinking water": 1800
+      },
+      {
+        "Farm code": 13,
+        "Production type": "beef*",
+        "Number of animals": 520,
+        "Use of water": 3500,
+        "Drinking water": 3500
+      },
+      {
+        "Farm code": 14,
+        "Production type": "beef*",
+        "Number of animals": 340,
+        "Use of water": 3700,
+        "Drinking water": 3700
+      },
+      {
+        "Farm code": 15,
+        "Production type": "pork**",
+        "Number of animals": 3800,
+        "Use of water": 2550
+      },
+      {
+        "Farm code": 16,
+        "Production type": "pork**",
+        "Number of animals": 2900,
+        "Use of water": 2150
+      },
+      {
+        "Farm code": 17,
+        "Production type": "pork**",
+        "Number of animals": 3900,
+        "Use of water": 2710
+      },
+      {
+        "Farm code": 18,
+        "Production type": "pork**",
+        "Number of animals": 4100,
+        "Use of water": 2900
+      },
+      {
+        "Farm code": 19,
+        "Production type": "pork**",
+        "Number of animals": 3600,
+        "Use of water": 2470
+      }
+    ]
+  ]
