@@ -36,13 +36,7 @@ function Main() {
       <Grid item xs={12}>
         <Typography variant="h6">{'Last scanned'}</Typography>
       </Grid>
-<<<<<<< Updated upstream
     </>
-=======
-      <Grid item xs={12}></Grid>
-      <QRReader />
-    </Grid>
->>>>>>> Stashed changes
   );
 }
 
