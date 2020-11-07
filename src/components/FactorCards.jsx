@@ -43,7 +43,7 @@ export const FactorCards = ({ data }) => {
       </Grid>
       <Grid item xs={4}>
         <Card className={classes.centered}>
-          <MoodIcon className={classes.muiIcon} color="yellow" />
+          <MoodIcon className={classes.muiIcon} fill="yellow" />
           <Typography variant="h4">{data.welfare}</Typography>
         </Card>
       </Grid>

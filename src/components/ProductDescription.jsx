@@ -23,7 +23,6 @@ const useStyles = makeStyles({
 const ProductDescription = (props) => {
   const classes = useStyles();
   const product = props.product;
-  console.log(product.img);
   return (
     <Card className={classes.card}>
       <div className={classes.headerContainer}>
