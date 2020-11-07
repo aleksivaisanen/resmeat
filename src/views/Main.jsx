@@ -1,7 +1,6 @@
 import { Grid, Typography, makeStyles } from '@material-ui/core';
 import ProductCard from '../components/ProductCard';
 import logo from '../assets/images/logo.png';
-import data from '../data/data.json';
 
 const useStyles = makeStyles({
   container: {
