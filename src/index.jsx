@@ -9,7 +9,7 @@ import Farm from './views/Farm';
 import QRReader from './components/QRReader';
 import Product from './views/Product';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
   gridContainer: {
     position: 'relative',
   },
@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
   container: {
     paddingTop: '20px',
   },
-}));
+});
 
 function Page({ children }) {
   const classes = useStyles();

@@ -6,6 +6,7 @@ import { Fab } from '@material-ui/core';
 import CameraAltIcon from '@material-ui/icons/CameraAlt';
 import CloseIcon from '@material-ui/icons/Close';
 import { Redirect } from 'react-router-dom';
+import useLocalStorage from '../hooks/useLocalStorage';
 
 const useStyle = makeStyles(theme => ({
   modal: {
@@ -38,6 +39,7 @@ const QRReader = (props) => {
     url: null
   }
   const [state, setState] = useState(initialState);
+  const [lastScanned, setLocalStorage] = useLocalStorage('last_scanned', []);
   const classes = useStyle();
 
   const handleScan = data => {
@@ -45,11 +47,16 @@ const QRReader = (props) => {
       data.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_.~#?&//=]*)/g) !== null &&
       data.includes("https://resmeat.com")
     ) {
+      const productId = data.split('/').pop();
       setState({
         ...state,
         readQR: false,
-        url: data.split('/').pop(),
+        url: productId,
       })
+      const updatedLastScanned = [...lastScanned]
+      updatedLastScanned.unshift(Number(productId));
+      updatedLastScanned.pop();
+      setLocalStorage(updatedLastScanned);
     } else if (data !== null) {
       alert('Invalid QR code!')
     }

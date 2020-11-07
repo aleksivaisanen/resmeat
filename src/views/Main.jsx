@@ -1,5 +1,8 @@
 import { Grid, Typography, makeStyles } from '@material-ui/core';
 import logo from '../assets/images/logo.png';
+import useLocalStorage from '../hooks/useLocalStorage';
+import data from '../data/data.json';
+import ProductDescription from '../components/ProductDescription';
 
 const useStyles = makeStyles({
   container: {
@@ -19,6 +22,9 @@ const useStyles = makeStyles({
 
 function Main() {
   const classes = useStyles();
+  const [lastScanned, setLocalStorage] = useLocalStorage('last_scanned', []);
+  console.log(lastScanned);
+  lastScanned.length === 0 && setLocalStorage([11, 12, 23]);
   return (
     <>
       <Grid item xs={12} className={classes.headerGrid}>
@@ -36,6 +42,13 @@ function Main() {
       <Grid item xs={12}>
         <Typography variant="h6">{'Last scanned'}</Typography>
       </Grid>
+      <div>
+        {lastScanned.map((productid) => {
+          const farmId = productid.toString().charAt(0) - 1;
+          const productData = data[farmId]['products'][productid.toString().charAt(1) - 1];
+          return <ProductDescription product={productData} />;
+        })}
+      </div>
     </>
   );
 }
