@@ -22,7 +22,7 @@ function Header() {
           <Link to="/" className={classes.headerLink}>
             <img src={logo} alt="resmeat-logo" height="40px" width="40px" />
             <Typography variant="h5" className={classes.verticalAlign}>
-              resmeat™
+              {'resmeat™'}
             </Typography>
           </Link>
         </Grid>

@@ -8,6 +8,7 @@ import Main from './views/Main';
 import Farm from './views/Farm';
 import QRReader from './components/QRReader';
 import Product from './views/Product';
+import * as serviceWorker from './serviceWorker';
 
 const useStyles = makeStyles({
   gridContainer: {
@@ -60,3 +61,5 @@ ReactDOM.render(
   </ThemeProvider>,
   document.getElementById('root')
 );
+
+serviceWorker.register();
