@@ -34,13 +34,23 @@ const useStyles = makeStyles({
   },
 })
 
-export const PieCard = ({ data, content, extraContent, innerText }) => {
+const scale = {
+  1: "D",
+  2: "C",
+  3: "B",
+  4: "A",
+  5: 'A+'
+}
+
+export const PieCard = ({ data, content, extraContent }) => {
   const [open, setOpen] = useState(false);
   const classes = useStyles({ open });
 
+  const total = data.reduce((a, b) => a + b.value, 0);
+  const avg = Math.ceil(total / 3);
   return (
     <div className={classes.container}>
-      <div className={classes.pie}><PieChart data={data} innerText={innerText} /></div>
+      <div className={classes.pie}><PieChart data={data} innerText={scale[avg]} /></div>
       <Card className={classes.cardContainer} onClick={() => setOpen(!open)} role="button">
         <div className={classes.contentWrapper}>
           {content}

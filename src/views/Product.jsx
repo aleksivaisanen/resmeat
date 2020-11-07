@@ -2,9 +2,9 @@ import { Grid, makeStyles } from '@material-ui/core';
 import { useParams, Link } from 'react-router-dom';
 import ProductDescription from '../components/ProductDescription';
 import FarmDescription from '../components/FarmDescription';
+import data from '../data/data.json';
 import { FactorCards } from '../components/FactorCards';
 import PieCard from '../components/PieCard';
-import data from '../data/data.json';
 
 const useStyles = makeStyles({
   link: {

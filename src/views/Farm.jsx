@@ -14,7 +14,7 @@ function Farm() {
         <FarmDescription farm={jsonData} />
       </Grid>
       <Grid item xs={12}>
-        <PieCard data={[{ label: "asd", value: 10 }, { label: "qwe", value: 2 }]} />
+        <PieCard data={[{ label: "welfare", value: 5 }, { label: "water", value: 5 }, { label: "carbon", value: 1 }]} />
       </Grid>
       <Grid item xs={12}>
         <FactorCards data={{ welfare: "A+", water: "D", carbon: "A" }} />
