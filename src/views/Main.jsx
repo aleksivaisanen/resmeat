@@ -1,4 +1,4 @@
-import { Grid, Typography, makeStyles } from '@material-ui/core';
+import { Grid, Typography, makeStyles, Card } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.png';
 import useLocalStorage from '../hooks/useLocalStorage';
@@ -11,7 +11,14 @@ const useStyles = makeStyles({
   },
   headerGrid: {
     textAlign: 'center',
-    marginTop: '20px',
+    borderRadius: '4px',
+    height: '400px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    background: 'url(/images/jumbotron-bg.jpg)',
+    backgroundSize: 'cover',
+    color: '#fff'
   },
   headerImg: {
     marginTop: '20px',
@@ -26,6 +33,9 @@ const useStyles = makeStyles({
     width: '100%',
     marginBottom: '20px',
   },
+  headerTypography: {
+    padding: '0 20px'
+  }
 });
 
 function Main() {
@@ -36,19 +46,12 @@ function Main() {
   return (
     <>
       <Grid item xs={12} className={classes.headerGrid}>
-        <Typography variant="h4" align="center">
-          {'Welcome to resmeat™! Scan the QR of the product to see its responsibility factors'}
+        <Typography variant="h4" align="center" className={classes.headerTypography}>
+          {`Welcome to resmeat™! Scan the QR of the product to see its responsibility factors`}
         </Typography>
-        <img
-          src={logo}
-          alt="resmeat-logo"
-          height="100px"
-          width="100px"
-          className={classes.headerImg}
-        />
       </Grid>
       <Grid item xs={12}>
-        <Typography variant="h6">{'Last scanned'}</Typography>
+        <Typography variant="h5">{'Last scanned'}</Typography>
       </Grid>
       <div className={classes.width100}>
         {lastScanned.map((productId) => {

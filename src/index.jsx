@@ -28,7 +28,7 @@ function Page({ children }) {
   const classes = useStyles();
   return (
     <div className={classes.background}>
-      <Header />
+      <Header className={classes.header} />
       <Container maxWidth="sm" className={classes.container}>
         <Grid container className={classes.gridContainer}>
           {children}
