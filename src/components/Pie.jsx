@@ -43,7 +43,6 @@ export const PieChart = ({ data, innerText }) => {
 
 
   const handleMouseOver = (event, datum) => {
-    console.log(event, datum);
     const coords = localPoint(event.target.ownerSVGElement, event);
     showTooltip({
       tooltipLeft: coords.x,

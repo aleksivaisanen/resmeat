@@ -10,12 +10,19 @@ const theme = createMuiTheme({
     },
   },
   overrides: {
+    MuiGrid: {
+      root: {
+        '&:not(:first-child)': {
+          '&:not(.MuiGrid-grid-xs-4)': {
+            marginTop: "40px",
+          }
+        }
+      }
+    },
     MuiCard: {
       root: {
         backgroundColor: '#FDF1EC',
         minHeight: '120px',
-        marginTop: "40px",
-        paddingTop: "20px"
       },
     },
   },

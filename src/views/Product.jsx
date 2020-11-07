@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import FarmDescription from '../components/FarmDescription';
 import ProductCard from '../components/ProductCard';
 import data from '../data/data.json';
+import PieCard from '../components/PieCard';
 
 function Product() {
   let { farmid } = useParams();
@@ -12,6 +13,7 @@ function Product() {
       <Grid item xs={12}>
         <FarmDescription farm={jsonData} />
       </Grid>
+      <PieCard />
       <Grid item xs={12}>
         <ProductCard />
       </Grid>

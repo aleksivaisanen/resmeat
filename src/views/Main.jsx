@@ -20,7 +20,7 @@ const useStyles = makeStyles({
 function Main() {
   const classes = useStyles();
   return (
-    <Grid container xs={12} spacing={2}>
+    <Grid container xs={12}>
       <Grid item xs={12} className={classes.headerGrid}>
         <Typography variant="h4" align="center">
           {'Welcome to resmeat! Scan a products QR to see its responsibility factors'}
