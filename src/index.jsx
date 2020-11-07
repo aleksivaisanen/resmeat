@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { ThemeProvider, CssBaseline, Container, makeStyles } from '@material-ui/core';
+import { ThemeProvider, CssBaseline, Container, makeStyles, Grid } from '@material-ui/core';
 import theme from './theme';
+import Header from './components/Header';
 import Main from './views/Main';
 import Farm from './views/Farm';
+import QRReader from './components/QRReader';
 import Product from './views/Product';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
+  gridContainer: {
+    position: 'relative',
+  },
   background: {
     background: '#EEF5FC',
     height: '100%',
@@ -17,14 +22,18 @@ const useStyles = makeStyles({
   container: {
     paddingTop: '20px',
   },
-});
+}));
 
 function Page({ children }) {
   const classes = useStyles();
   return (
     <div className={classes.background}>
+      <Header />
       <Container maxWidth="sm" className={classes.container}>
-        {children}
+        <Grid container xs={12} className={classes.gridContainer}>
+          {children}
+          <QRReader />
+        </Grid>
       </Container>
     </div>
   );

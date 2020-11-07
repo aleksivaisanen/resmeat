@@ -4,6 +4,7 @@ const theme = createMuiTheme({
   palette: {
     primary: {
       main: '#134074',
+      background: '#EEF5FC'
     },
     secondary: {
       main: '#13315C',
@@ -14,7 +15,9 @@ const theme = createMuiTheme({
       root: {
         '&:not(:first-child)': {
           '&:not(.MuiGrid-grid-xs-4)': {
-            marginTop: "40px",
+            '&:not(.qr-reader)': {
+              marginTop: "40px",
+            }
           }
         }
       }
