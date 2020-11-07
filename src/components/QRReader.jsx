@@ -30,7 +30,6 @@ const QRReader = (props) => {
     id: null,
     readQR: false,
     error: false,
-    redirect: false,
     url: null
   }
   const [state, setState] = useState(initialState);
@@ -44,7 +43,6 @@ const QRReader = (props) => {
       setState({
         ...state,
         readQR: false,
-        redirect: true,
         url: data.split('/').pop(),
       })
     } else if (data !== null) {
@@ -58,11 +56,7 @@ const QRReader = (props) => {
   }
 
   const render = () => {
-    if (state.redirect === true) {
-      setState({ ...state, redirect: false })
-      return <Redirect to={`/farm/${state.url}`} />
-    }
-    else if (state.readQR === false) {
+    if (state.readQR === false) {
       return (
         <Fab className={classes.fab} color="primary" onClick={() => setState({ ...state, readQR: true })}>
           <CameraAltIcon />
@@ -90,6 +84,7 @@ const QRReader = (props) => {
 
   return (
     <>
+      {state.url !== null && <Redirect to={`/farm/${state.url}`} />}
       {render()}
     </>
   )
