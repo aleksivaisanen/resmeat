@@ -50,15 +50,15 @@ const QRReader = (props) => {
       ) !== null &&
       data.includes('https://resmeat.com')
     ) {
-      const productId = data.split('/').pop();
+      const productId = Number(data.split('/').pop());
       setState({
         ...state,
         readQR: false,
         url: productId,
       });
-      if (productId !== lastScanned[0]) {
+      if (!lastScanned.includes(productId)) {
         const updatedLastScanned = [...lastScanned];
-        updatedLastScanned.unshift(Number(productId));
+        updatedLastScanned.unshift(productId);
         updatedLastScanned.pop();
         setLocalStorage(updatedLastScanned);
       }

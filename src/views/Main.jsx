@@ -1,6 +1,5 @@
-import { Grid, Typography, makeStyles, Card } from '@material-ui/core';
+import { Grid, Typography, makeStyles } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import logo from '../assets/images/logo.png';
 import useLocalStorage from '../hooks/useLocalStorage';
 import data from '../data/data.json';
 import ProductDescription from '../components/ProductDescription';
@@ -41,7 +40,6 @@ const useStyles = makeStyles({
 function Main() {
   const classes = useStyles();
   const [lastScanned, setLocalStorage] = useLocalStorage('last_scanned', []);
-  console.log(lastScanned);
   lastScanned.length === 0 && setLocalStorage([11, 12, 23]);
   return (
     <>
@@ -58,7 +56,7 @@ function Main() {
           const farmId = productId.toString().charAt(0) - 1;
           const productData = data[farmId]['products'][productId.toString().charAt(1) - 1];
           return (
-            <Link to={`/product/${productId}`} className={classes.link}>
+            <Link to={`/product/${productId}`} className={classes.link} key={productId}>
               <ProductDescription key={productId} product={productData} />
             </Link>
           );
