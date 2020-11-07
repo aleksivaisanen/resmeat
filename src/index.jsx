@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ThemeProvider, CssBaseline, Container, makeStyles, Grid } from '@material-ui/core';
 import theme from './theme';
+import Header from './components/Header';
 import Main from './views/Main';
 import Farm from './views/Farm';
 import QRReader from './components/QRReader';
@@ -27,6 +28,7 @@ function Page({ children }) {
   const classes = useStyles();
   return (
     <div className={classes.background}>
+      <Header />
       <Container maxWidth="sm" className={classes.container}>
         <Grid container xs={12} className={classes.gridContainer}>
           {children}

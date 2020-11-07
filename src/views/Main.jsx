@@ -1,5 +1,4 @@
 import { Grid, Typography, makeStyles } from '@material-ui/core';
-import ProductCard from '../components/ProductCard';
 import logo from '../assets/images/logo.png';
 
 const useStyles = makeStyles({
@@ -14,8 +13,8 @@ const useStyles = makeStyles({
     marginTop: '20px',
   },
   gridMarginTop: {
-    marginTop: '10px'
-  }
+    marginTop: '10px',
+  },
 });
 
 function Main() {
@@ -36,10 +35,6 @@ function Main() {
       </Grid>
       <Grid item xs={12}>
         <Typography variant="h6">{'Last scanned'}</Typography>
-        <ProductCard />
-      </Grid>
-      <Grid item xs={12}>
-        <ProductCard />
       </Grid>
     </>
   );
