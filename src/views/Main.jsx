@@ -37,7 +37,7 @@ function Main() {
     <>
       <Grid item xs={12} className={classes.headerGrid}>
         <Typography variant="h4" align="center">
-          {'Welcome to resmeat! Scan a products QR to see its responsibility factors'}
+          {'Welcome to resmeat™! Scan the QR of the product to see its responsibility factors'}
         </Typography>
         <img
           src={logo}
