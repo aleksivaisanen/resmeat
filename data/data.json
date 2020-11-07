@@ -1,380 +1,190 @@
 [
-    {
-        "farmCode": 1,
-        "broiler": {
-            "nAnimals": 455000,
-            "Total carbon footprint of the farm CO2e": 1889525,
-            "Carbon footprint of broiler production (CO2e / kg meat)": 2.5,
-            "Own wheat production": 10.7,
-            "Wheat purchased": 0,
-            "Industrial feed": 57.3,
-            "Manure system": 16.3,
-            "Energy": 6.4,
-            "Others": 9.3,
-            "dWater": 2825.5,
-            "wWater": 210,
-            "water": 3035.5
-        },
-        "pork": {
-            "nAnimals": 3800,
-            "Total carbon footprint of the farm CO2e": 3490088,
-            "Carbon footprint of pork production (CO2e / kg meat)": 4.3,
-            "Feeds": 78.1,
-            "Energy": 4.6,
-            "Beddings": 0,
-            "Manure system": 14.1,
-            "Animal digestion": 2.4,
-            "Transport": 0.8,
-            "water": 2550
-        },
-        "beef": {
-            "nAnimals": 800,
-            "Carbon footprint of beef production (CO2e / kg meat)": 7.86,
-            "Feeds produced in the farm": 3.35,
-            "Feeds purchased outside the farm": 0.34,
-            "Ruminant digestion": 2.59,
-            "Manure system": 0.87,
-            "Production of calves purchased outside the farm": 0.44,
-            "Energy": 0.24,
-            "Others": 0.03,
-            "water": 18000,
-            "dWater": 18000
-        }
+  {
+    "farmCode": 1,
+    "farmName": "McDonald farm",
+    "farmDescription": "Nestled at the base of Walden’s ridge in northern Hamilton County, the farm has been home to the McDonald family for eight generations, and holds a special place in the hearts of all McDonald family members who have spent time there. As a working farm, nearly 700 acres are used to cultivate hay and cattle.",
+    "broiler": {
+      "nAnimals": 455000,
+      "Total carbon footprint of the farm CO2e": 1889525,
+      "Carbon footprint of broiler production (CO2e / kg meat)": 2.5,
+      "Own wheat production": 10.7,
+      "Wheat purchased": 0,
+      "Industrial feed": 57.3,
+      "Manure system": 16.3,
+      "Energy": 6.4,
+      "Others": 9.3,
+      "drinkWater": 2825.5,
+      "washWater": 210,
+      "water": 3035.5
     },
-    {
-        "farmCode": 2,
-        "nAnimals": 433000,
-        "broiler": {
-            "Total carbon footprint of the farm CO2e": 1835022,
-            "Carbon footprint of broiler production (CO2e / kg meat)": 2.3,
-            "Own wheat production": 5,
-            "Wheat purchased": 0,
-            "Industrial feed": 64.8,
-            "Manure system": 17.5,
-            "Energy": 2.7,
-            "Others": 10,
-            "water": 2801.5,
-            "dWater": 2611.5,
-            "wWater": 190
-        },
-        "pork": {
-            "Total carbon footprint of the farm CO2e": 2381671,
-            "Carbon footprint of pork production (CO2e / kg meat)": 3.2,
-            "Feeds": 67.2,
-            "Energy": 4.7,
-            "Beddings": 0,
-            "Manure system": 21.7,
-            "Animal digestion": 5.2,
-            "Transport": 1.2,
-            "water": 2550
-        },
-        "beef": {
-            "Carbon footprint of beef production (CO2e / kg meat)": 9.27,
-            "Feeds produced in the farm": 1.42,
-            "Feeds purchased outside the farm": 2.88,
-            "Ruminant digestion": 3.11,
-            "Manure system": 0.89,
-            "Production of calves purchased outside the farm": 0.46,
-            "Energy": 0.45,
-            "Others": 0.07,
-            "water": 3500,
-            "dWater": 3500
-        }
+    "pork": {
+      "nAnimals": 3800,
+      "Total carbon footprint of the farm CO2e": 3490088,
+      "Carbon footprint of pork production (CO2e / kg meat)": 4.3,
+      "Feeds": 78.1,
+      "Energy": 4.6,
+      "Beddings": 0,
+      "Manure system": 14.1,
+      "Animal digestion": 2.4,
+      "Transport": 0.8,
+      "drinkWater": 2825.5,
+      "washWater": 1210,
+      "water": 4035.5
     },
-    {
-        "farmCode": 3,
-        "nAnimals": 495000,
-        "broiler": {
-            "Total carbon footprint of the farm CO2e": 1699024,
-            "Carbon footprint of broiler production (CO2e / kg meat)": 2.5,
-            "Own wheat production": 7.8,
-            "Wheat purchased": 0,
-            "Industrial feed": 64.8,
-            "Manure system": 15.8,
-            "Energy": 2.4,
-            "Others": 9.2,
-            "water": 3200,
-            "dWater": 3000,
-            "wWater": 200
-        },
-        "pork": {
-            "Total carbon footprint of the farm CO2e": 2849638,
-            "Carbon footprint of pork production (CO2e / kg meat)": 3,
-            "Feeds": 63,
-            "Energy": 5.2,
-            "Beddings": 0,
-            "Manure system": 24.7,
-            "Animal digestion": 6,
-            "Transport": 1.1,
-            "water": 2900
-        },
-        "beef": {
-            "Carbon footprint of beef production (CO2e / kg meat)": 8.14,
-            "Feeds produced in the farm": 1.29,
-            "Feeds purchased outside the farm": 1.78,
-            "Ruminant digestion": 2.8,
-            "Manure system": 0.77,
-            "Production of calves purchased outside the farm": 1.62,
-            "Energy": 0.36,
-            "Others": 0.04,
-            "water": 3700,
-            "dWater": 3700
-        }
-    },
-    {
-        "farmCode": 4,
-        "nAnimals": 450000,
-        "broiler": {
-            "Total carbon footprint of the farm CO2e": 2562468,
-            "Carbon footprint of broiler production (CO2e / kg meat)": 2.5,
-            "Own wheat production": 6.7,
-            "Wheat purchased": 0,
-            "Industrial feed": 65.7,
-            "Manure system": 15.9,
-            "Energy": 2.4,
-            "Others": 9.3,
-            "water": 2998,
-            "dWater": 2788,
-            "wWater": 210
-        },
-        "pork": {
-            "Total carbon footprint of the farm CO2e": 2507147,
-            "Carbon footprint of pork production (CO2e / kg meat)": 2.8,
-            "Feeds": 66.9,
-            "Energy": 2.6,
-            "Beddings": 0,
-            "Manure system": 23.7,
-            "Animal digestion": 5.8,
-            "Transport": 1,
-            "water": 2470
-        },
-        "beef": {
-            "Carbon footprint of beef production (CO2e / kg meat)": 7.52,
-            "Feeds produced in the farm": 2.6,
-            "Feeds purchased outside the farm": 0.77,
-            "Ruminant digestion": 2.8,
-            "Manure system": 0.54,
-            "Production of calves purchased outside the farm": 0.41,
-            "Energy": 0.35,
-            "Others": 0.04,
-            "water": 3700,
-            "dWater": 3700
-        }
-    },
-    {
-        "farmCode": 5,
-        "nAnimals": 452000,
-        "broiler": {
-            "Total carbon footprint of the farm CO2e": 2061051,
-            "Carbon footprint of broiler production (CO2e / kg meat)": 2.5,
-            "Own wheat production": 12.4,
-            "Wheat purchased": 0,
-            "Industrial feed": 59.8,
-            "Manure system": 16.2,
-            "Energy": 2.4,
-            "Others": 9.2,
-            "water": 3010,
-            "dWater": 2840,
-            "wWater": 170
-        },
-        "pork": {
-            "Total carbon footprint of the farm CO2e": 3119008,
-            "Carbon footprint of pork production (CO2e / kg meat)": 3.2,
-            "Feeds": 61.9,
-            "Energy": 6.5,
-            "Beddings": 0,
-            "Manure system": 24.4,
-            "Animal digestion": 6,
-            "Transport": 1.1,
-            "water": 2000
-        }
-    },
-    {
-        "farmCode": 6,
-        "nAnimals": 470000,
-        "broiler": {
-            "Total carbon footprint of the farm CO2e": 5221211,
-            "Carbon footprint of broiler production (CO2e / kg meat)": 2.4,
-            "Own wheat production": 9.1,
-            "Wheat purchased": 0,
-            "Industrial feed": 62,
-            "Manure system": 16.4,
-            "Energy": 2.8,
-            "Others": 9.7,
-            "water": 3244,
-            "dWater": 3044,
-            "wWater": 200
-        },
-        "pork": {
-            "Total carbon footprint of the farm CO2e": 861230,
-            "Carbon footprint of pork production (CO2e / kg meat)": 2.5,
-            "Feeds": 62.2,
-            "Energy": 3.1,
-            "Beddings": 0,
-            "Manure system": 26.4,
-            "Animal digestion": 6.7,
-            "Transport": 1.6,
-            "water": 2400
-        }
-    },
-    {
-        "farmCode": 7,
-        "nAnimals": 425000,
-        "broiler": {
-            "Total carbon footprint of the farm CO2e": 1928258,
-            "Carbon footprint of broiler production (CO2e / kg meat)": 2.3,
-            "Own wheat production": 6.5,
-            "Wheat purchased": 0,
-            "Industrial feed": 65.2,
-            "Manure system": 16.9,
-            "Energy": 1.8,
-            "Others": 9.6,
-            "water": 2800,
-            "dWater": 2610,
-            "wWater": 190
-        },
-        "pork": {
-            "Total carbon footprint of the farm CO2e": 3567197,
-            "Carbon footprint of pork production (CO2e / kg meat)": 3.3,
-            "Feeds": 75.3,
-            "Energy": 2.6,
-            "Beddings": 0,
-            "Manure system": 13.3,
-            "Animal digestion": 7.8,
-            "Transport": 0.9,
-            "water": 1200
-        }
-    },
-    {
-        "farmCode": 8,
-        "nAnimals": 420000,
-        "broiler": {
-            "Total carbon footprint of the farm CO2e": 1970507,
-            "Carbon footprint of broiler production (CO2e / kg meat)": 2.4,
-            "Own wheat production": 1.7,
-            "Wheat purchased": 6.9,
-            "Industrial feed": 62.3,
-            "Manure system": 16.4,
-            "Energy": 2.6,
-            "Others": 10,
-            "water": 2750,
-            "dWater": 2540,
-            "wWater": 210
-        },
-        "pork": {
-            "Total carbon footprint of the farm CO2e": 814241,
-            "Carbon footprint of pork production (CO2e / kg meat)": 2.8,
-            "Feeds": 65.7,
-            "Energy": 3.5,
-            "Beddings": 0,
-            "Manure system": 24.5,
-            "Animal digestion": 5.8,
-            "Transport": 0.5,
-            "water": 1200
-        }
-    },
-    {
-        "farmCode": 9,
-        "nAnimals": 456000,
-        "broiler": {
-            "Total carbon footprint of the farm CO2e": 939131,
-            "Carbon footprint of broiler production (CO2e / kg meat)": 2.4,
-            "Own wheat production": 8.2,
-            "Wheat purchased": 0,
-            "Industrial feed": 63.4,
-            "Manure system": 16.5,
-            "Energy": 1.7,
-            "Others": 10.1,
-            "water": 3100,
-            "dWater": 2900,
-            "wWater": 200
-        },
-        "pork": {
-            "Total carbon footprint of the farm CO2e": 822521,
-            "Carbon footprint of pork production (CO2e / kg meat)": 2.9,
-            "Feeds": 76.4,
-            "Energy": 6.5,
-            "Beddings": 0.3,
-            "Manure system": 13.2,
-            "Animal digestion": 3,
-            "Transport": 0.6,
-            "water": 1500
-        }
-    },
-    {
-        "farmCode": 10,
-        "nAnimals": 455000,
-        "broiler": {
-            "Total carbon footprint of the farm CO2e": 2924727,
-            "Carbon footprint of broiler production (CO2e / kg meat)": 2.4,
-            "Own wheat production": 1,
-            "Wheat purchased": 6.7,
-            "Industrial feed": 63.8,
-            "Manure system": 16.2,
-            "Energy": 2.9,
-            "Others": 9.4,
-            "water": 2900,
-            "dWater": 2670,
-            "wWater": 230
-        },
-        "pork": {
-            "Total carbon footprint of the farm CO2e": 3274597,
-            "Carbon footprint of pork production (CO2e / kg meat)": 4.5,
-            "Feeds": 65.1,
-            "Energy": 2.4,
-            "Beddings": 0,
-            "Manure system": 24.1,
-            "Animal digestion": 6.1,
-            "Transport": 2.3,
-            "water": 1600
-        }
-    },
-    {
-        "farmCode": 11,
-        "nAnimals": 800,
-        "pork": {
-            "Total carbon footprint of the farm CO2e": 4231597,
-            "Carbon footprint of pork production (CO2e / kg meat)": 4.8,
-            "Feeds": 69.8,
-            "Energy": 2.1,
-            "Beddings": 0,
-            "Manure system": 22.1,
-            "Animal digestion": 5.2,
-            "Transport": 0.7,
-            "water": 18000,
-            "dWater": 18000
-        }
-    },
-    {
-        "farmCode": 12,
-        "nAnimals": 180,
-        "pork": {
-            "Total carbon footprint of the farm CO2e": 3264249,
-            "Carbon footprint of pork production (CO2e / kg meat)": 3.3,
-            "Feeds": 69.4,
-            "Energy": 3.7,
-            "Beddings": 0,
-            "Manure system": 20.7,
-            "Animal digestion": 4.9,
-            "Transport": 1.2,
-            "water": 1800,
-            "dWater": 1800
-        }
-    },
-    {
-        "farmCode": 13,
-        "nAnimals": 520,
-        "pork": {
-            "Total carbon footprint of the farm CO2e": 1575300,
-            "Carbon footprint of pork production (CO2e / kg meat)": 3.5,
-            "Feeds": 68.9,
-            "Energy": 2.4,
-            "Beddings": 0.1,
-            "Manure system": 21.9,
-            "Animal digestion": 5.6,
-            "Transport": 1.2,
-            "water": 3500,
-            "dWater": 3500
-        }
+    "beef": {
+      "nAnimals": 800,
+      "Carbon footprint of beef production (CO2e / kg meat)": 7.86,
+      "Feeds produced in the farm": 3.35,
+      "Feeds purchased outside the farm": 0.34,
+      "Ruminant digestion": 2.59,
+      "Manure system": 0.87,
+      "Production of calves purchased outside the farm": 0.44,
+      "Energy": 0.24,
+      "Others": 0.03,
+      "drinkWater": 4825.5,
+      "washWater": 2210,
+      "water": 7035.5
     }
+  },
+  {
+    "farmCode": 2,
+    "farmName": "Silenius farm",
+    "farmDescription": "Nestled at the base of Walden’s ridge in northern Hamilton County, the farm has been home to the Silenius family for eight generations, and holds a special place in the hearts of all Silenius family members who have spent time there. As a working farm, nearly 800 acres are used to cultivate hay and cattle.",
+    "broiler": {
+      "nAnimals": 433000,
+      "Total carbon footprint of the farm CO2e": 1835022,
+      "Carbon footprint of broiler production (CO2e / kg meat)": 2.3,
+      "Own wheat production": 5,
+      "Wheat purchased": 0,
+      "Industrial feed": 64.8,
+      "Manure system": 17.5,
+      "Energy": 2.7,
+      "Others": 10,
+      "water": 2801.5,
+      "drinkWater": 2611.5,
+      "washWater": 190
+    },
+    "pork": {
+      "nAnimals": 4330,
+      "Total carbon footprint of the farm CO2e": 2381671,
+      "Carbon footprint of pork production (CO2e / kg meat)": 3.2,
+      "Feeds": 67.2,
+      "Energy": 4.7,
+      "Beddings": 0,
+      "Manure system": 21.7,
+      "Animal digestion": 5.2,
+      "Transport": 1.2,
+      "drinkWater": 4825.5,
+      "washWater": 2210,
+      "water": 7035.5
+    },
+    "beef": {
+      "nAnimals": 2330,
+      "Carbon footprint of beef production (CO2e / kg meat)": 9.27,
+      "Feeds produced in the farm": 1.42,
+      "Feeds purchased outside the farm": 2.88,
+      "Ruminant digestion": 3.11,
+      "Manure system": 0.89,
+      "Production of calves purchased outside the farm": 0.46,
+      "Energy": 0.45,
+      "Others": 0.07,
+      "drinkWater": 3825.5,
+      "washWater": 2210,
+      "water": 6035.5
+    }
+  },
+  {
+    "farmCode": 3,
+    "farmName": "Väisänen farm",
+    "farmDescription": "Nestled at the base of Walden’s ridge in northern Hamilton County, the farm has been home to the Väisänen family for nine generations, and holds a special place in the hearts of all Väisänen family members who have spent time there. As a working farm, nearly 500 acres are used to cultivate hay and cattle.",
+    "broiler": {
+      "nAnimals": 495000,
+      "Total carbon footprint of the farm CO2e": 1699024,
+      "Carbon footprint of broiler production (CO2e / kg meat)": 2.5,
+      "Own wheat production": 7.8,
+      "Wheat purchased": 0,
+      "Industrial feed": 64.8,
+      "Manure system": 15.8,
+      "Energy": 2.4,
+      "Others": 9.2,
+      "water": 3200,
+      "drinkWater": 3000,
+      "washWater": 200
+    },
+    "pork": {
+      "nAnimals": 4950,
+      "Total carbon footprint of the farm CO2e": 2849638,
+      "Carbon footprint of pork production (CO2e / kg meat)": 3,
+      "Feeds": 63,
+      "Energy": 5.2,
+      "Beddings": 0,
+      "Manure system": 24.7,
+      "Animal digestion": 6,
+      "Transport": 1.1,
+      "water": 1200,
+      "drinkWater": 1000,
+      "washWater": 200
+    },
+    "beef": {
+      "nAnimals": 2950,
+      "Carbon footprint of beef production (CO2e / kg meat)": 8.14,
+      "Feeds produced in the farm": 1.29,
+      "Feeds purchased outside the farm": 1.78,
+      "Ruminant digestion": 2.8,
+      "Manure system": 0.77,
+      "Production of calves purchased outside the farm": 1.62,
+      "Energy": 0.36,
+      "Others": 0.04,
+      "water": 3700,
+      "drinkWater": 2700,
+      "washWater": 1000
+    }
+  },
+  {
+    "farmCode": 4,
+    "farmName": "Lappalainen farm",
+    "farmDescription": "Nestled at the base of Walden’s ridge in northern Hamilton County, the farm has been home to the Lappalainen family for nine generations, and holds a special place in the hearts of all Lappalainen family members who have spent time there. As a working farm, nearly 600 acres are used to cultivate hay and cattle.",
+    "broiler": {
+      "nAnimals": 450000,
+      "Total carbon footprint of the farm CO2e": 2562468,
+      "Carbon footprint of broiler production (CO2e / kg meat)": 2.5,
+      "Own wheat production": 6.7,
+      "Wheat purchased": 0,
+      "Industrial feed": 65.7,
+      "Manure system": 15.9,
+      "Energy": 2.4,
+      "Others": 9.3,
+      "water": 2998,
+      "drinkWater": 2788,
+      "washWater": 210
+    },
+    "pork": {
+      "nAnimals": 4500,
+      "Total carbon footprint of the farm CO2e": 2507147,
+      "Carbon footprint of pork production (CO2e / kg meat)": 2.8,
+      "Feeds": 66.9,
+      "Energy": 2.6,
+      "Beddings": 0,
+      "Manure system": 23.7,
+      "Animal digestion": 5.8,
+      "Transport": 1,
+      "water": 3700,
+      "drinkWater": 2700,
+      "washWater": 1000
+    },
+    "beef": {
+      "nAnimals": 2500,
+      "Carbon footprint of beef production (CO2e / kg meat)": 7.52,
+      "Feeds produced in the farm": 2.6,
+      "Feeds purchased outside the farm": 0.77,
+      "Ruminant digestion": 2.8,
+      "Manure system": 0.54,
+      "Production of calves purchased outside the farm": 0.41,
+      "Energy": 0.35,
+      "Others": 0.04,
+      "drinkWater": 4825.5,
+      "washWater": 2210,
+      "water": 7035.5
+    }
+  }
 ]
