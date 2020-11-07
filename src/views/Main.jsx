@@ -1,6 +1,8 @@
 import { Grid, Typography, makeStyles } from '@material-ui/core';
 import ProductCard from '../components/ProductCard';
 import logo from '../assets/images/logo.png';
+import QRReader from '../components/QRReader';
+import data from '../data/data.json';
 
 const useStyles = makeStyles({
   headerGrid: {
@@ -35,6 +37,7 @@ function Main() {
       <Grid item xs={12}>
         <ProductCard />
       </Grid>
+      <QRReader />
     </Grid>
   );
 }
