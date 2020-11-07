@@ -16,7 +16,7 @@ const theme = createMuiTheme({
         '&:not(:first-child)': {
           '&:not(.MuiGrid-grid-xs-4)': {
             '&:not(.qr-reader)': {
-              marginTop: "40px",
+              marginTop: "20px",
             }
           }
         }

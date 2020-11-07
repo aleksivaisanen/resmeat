@@ -30,7 +30,7 @@ function Page({ children }) {
     <div className={classes.background}>
       <Header />
       <Container maxWidth="sm" className={classes.container}>
-        <Grid container xs={12} className={classes.gridContainer}>
+        <Grid container className={classes.gridContainer}>
           {children}
           <QRReader />
         </Grid>
