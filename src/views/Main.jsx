@@ -14,6 +14,9 @@ const useStyles = makeStyles({
   headerImg: {
     marginTop: '20px',
   },
+  gridMarginTop: {
+    marginTop: '10px'
+  }
 });
 
 function Main() {

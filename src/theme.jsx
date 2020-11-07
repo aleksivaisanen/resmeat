@@ -15,7 +15,8 @@ const theme = createMuiTheme({
       root: {
         backgroundColor: '#FDF1EC',
         minHeight: '120px',
-        marginTop: "10px",
+        marginTop: "40px",
+        paddingTop: "20px"
       },
     },
   },
