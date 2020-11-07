@@ -3,14 +3,14 @@ import { Card, CardContent, CardHeader, Typography, Avatar } from '@material-ui/
 
 const useStyles = makeStyles({
   card: {
-    marginTop: '100px',
+    marginTop: '75px',
     overflow: 'visible',
   },
   avatar: {
-    width: '200px',
-    height: '200px',
+    width: '150px',
+    height: '150px',
     margin: '16px',
-    marginTop: '-100px',
+    marginTop: '-50px',
   },
   headerContainer: {
     display: 'flex',

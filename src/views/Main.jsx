@@ -1,4 +1,5 @@
 import { Grid, Typography, makeStyles } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.png';
 import useLocalStorage from '../hooks/useLocalStorage';
 import data from '../data/data.json';
@@ -17,6 +18,13 @@ const useStyles = makeStyles({
   },
   gridMarginTop: {
     marginTop: '10px',
+  },
+  link: {
+    textDecoration: 'none',
+  },
+  width100: {
+    width: '100%',
+    marginBottom: '20px',
   },
 });
 
@@ -42,11 +50,15 @@ function Main() {
       <Grid item xs={12}>
         <Typography variant="h6">{'Last scanned'}</Typography>
       </Grid>
-      <div>
+      <div className={classes.width100}>
         {lastScanned.map((productId) => {
           const farmId = productId.toString().charAt(0) - 1;
           const productData = data[farmId]['products'][productId.toString().charAt(1) - 1];
-          return <ProductDescription key={productId} product={productData} />;
+          return (
+            <Link to={`/product/${productId}`} className={classes.link}>
+              <ProductDescription key={productId} product={productData} />
+            </Link>
+          );
         })}
       </div>
     </>
