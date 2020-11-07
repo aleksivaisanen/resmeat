@@ -11,12 +11,15 @@ const useStyles = makeStyles({
     textDecoration: 'none',
     color: 'inherit',
   },
+  appBar: {
+    padding: '10px 0',
+  }
 });
 
 function Header() {
   const classes = useStyles();
   return (
-    <AppBar position="static">
+    <AppBar position="static" className={classes.appBar}>
       <Container maxWidth="sm">
         <Grid container>
           <Link to="/" className={classes.headerLink}>
