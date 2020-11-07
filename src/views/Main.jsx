@@ -8,12 +8,15 @@ import data from '../data/data.json'
 const useStyles = makeStyles({
   background: {
     background: '#DCEAF9',
-    height: '100vh',
+    height: '100%',
     width: '100%',
   },
   container: {
     paddingTop: '20px',
   },
+  gridMarginTop: {
+    marginTop: '10px'
+  }
 });
 
 function Main() {
@@ -23,21 +26,25 @@ function Main() {
     <div className={classes.background}>
       <Container maxWidth="sm" className={classes.container}>
         <Grid container item xs={12}>
-          <Grid item xs={12}>
-            <Search />
-          </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} className={classes.gridMarginTop}>
             <FarmDescription farm={jsonData} />
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} className={classes.gridMarginTop}>
             <PieCard data={[{ label: "asd", value: 10 }, { label: "qwe", value: 2 }]} content={
               <>
                 <div>hello World</div>
                 <div>Hello hello</div>
               </>
-            } innerText="A+" />
+            }
+
+              extraContent={
+                <div>
+                  Hello World
+                </div>
+              }
+              innerText="A+" />
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} className={classes.gridMarginTop}>
             <ProductCard />
           </Grid>
         </Grid>

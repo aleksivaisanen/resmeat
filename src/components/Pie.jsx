@@ -16,8 +16,6 @@ const useStyles = makeStyles({
   }
 })
 
-let tooltipTimeout;
-
 export const PieChart = ({ data, innerText }) => {
 
   const { containerRef, TooltipInPortal } = useTooltipInPortal({
