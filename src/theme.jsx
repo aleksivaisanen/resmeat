@@ -16,7 +16,7 @@ const theme = createMuiTheme({
         '&:not(:first-child)': {
           '&:not(.MuiGrid-grid-xs-4)': {
             '&:not(.qr-reader)': {
-              marginTop: "40px",
+              marginTop: "20px",
             }
           }
         }
@@ -24,7 +24,7 @@ const theme = createMuiTheme({
     },
     MuiCard: {
       root: {
-        backgroundColor: '#FDF1EC',
+        backgroundColor: '#fff',
         minHeight: '120px',
       },
     },
