@@ -51,7 +51,7 @@ const Leaderboard = () => {
     {
       place: '3rd',
       name: 'Petro Silenius',
-      points: '69',
+      points: '71',
       class: 'bronze'
     },
   ]

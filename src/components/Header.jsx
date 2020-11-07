@@ -1,6 +1,7 @@
-import { AppBar, Container, Grid, makeStyles, Typography } from '@material-ui/core';
+import { AppBar, Container, Grid, makeStyles, Typography, Avatar } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.png';
+import farmer from '../assets/images/farmer.jpg';
 
 const useStyles = makeStyles({
   verticalAlign: {
@@ -12,7 +13,19 @@ const useStyles = makeStyles({
     color: 'inherit',
   },
   appBar: {
+    height: '60px',
     padding: '10px 0',
+  },
+  avatar: {
+    marginLeft: 'auto',
+    cursor: 'pointer'
+  },
+  typographyContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    margin: '0 10px',
+    cursor: 'pointer'
   }
 });
 
@@ -28,6 +41,15 @@ function Header() {
               {'resmeat™'}
             </Typography>
           </Link>
+          <Avatar src={farmer} className={classes.avatar} />
+          <div className={classes.typographyContainer}>
+            <Typography variant="body1">
+              {'Herbert McDonald'}
+            </Typography>
+            <Typography variant="caption">
+              {'37 points'}
+            </Typography>
+          </div>
         </Grid>
       </Container>
     </AppBar>
