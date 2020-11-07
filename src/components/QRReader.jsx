@@ -85,7 +85,7 @@ const QRReader = (props) => {
 
   return (
     <>
-      {state.url !== null && <Redirect to={`/farm/${state.url}`} />}
+      {state.url !== null && <Redirect to={`/product/${state.url}`} />}
       {render()}
     </>
   )
