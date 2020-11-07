@@ -24,10 +24,10 @@ function Product() {
         <ProductDescription product={productData} />
       </Grid>
       <Grid item xs={12}>
-        <PieCard data={[{ label: "welfare", value: 5 }, { label: "water", value: 5 }, { label: "carbon", value: 1 }]} />
+        <PieCard data={[{ label: "welfare", value: 5 }, { label: "carbon", value: 1 }, { label: "water", value: 5 }]} />
       </Grid>
       <Grid item xs={12}>
-        <FactorCards data={{ welfare: 'A+', water: 'D', carbon: 'A' }} />
+        <FactorCards data={{ welfare: 'A+', water: 'D', carbon: 'A+' }} />
       </Grid>
       <Grid item xs={12}>
         <Link to={`/farm/${farmId}`} className={classes.link}>

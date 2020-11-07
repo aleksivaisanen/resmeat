@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import { makeStyles, Card } from '@material-ui/core';
+import { makeStyles, Card, Typography, TableContainer, TableHead, Table, TableRow, TableCell } from '@material-ui/core';
+import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 import PieChart from "./Pie"
+import { useParams, useLocation } from 'react-router-dom';
 
 const useStyles = makeStyles({
   container: {
@@ -10,7 +12,7 @@ const useStyles = makeStyles({
     justifyContent: "center",
     alignItems: "center",
     position: "relative",
-    paddingTop: '150px'
+    paddingTop: '100px'
   },
   pie: {
     position: "absolute",
@@ -32,6 +34,20 @@ const useStyles = makeStyles({
     justifyContent: "space-between",
     margin: "20px"
   },
+  icon: {
+    fontSize: '3rem',
+    color: "green"
+  },
+  centered: {
+    display: "flex",
+    alignItems: "center",
+  },
+  eu: {
+    color: 'rgb(69, 123, 157)'
+  },
+  upper: {
+    marginTop: "-50px"
+  }
 })
 
 const scale = {
@@ -43,21 +59,47 @@ const scale = {
 }
 
 export const PieCard = ({ data, content, extraContent }) => {
-  const [open, setOpen] = useState(false);
-  const classes = useStyles({ open });
+  const { pathname } = useLocation();
+  const { farmid, productid } = useParams();
 
+  const [open, setOpen] = useState(false);
+  const [active, setActive] = useState(null);
+  const classes = useStyles({ open });
   const total = data.reduce((a, b) => a + b.value, 0);
   const avg = Math.ceil(total / 3);
+
   return (
     <div className={classes.container}>
-      <div className={classes.pie}><PieChart data={data} innerText={scale[avg]} /></div>
+      <div className={classes.pie}><PieChart data={data} active={active} setActive={setActive} innerText={scale[avg]} /></div>
       <Card className={classes.cardContainer} onClick={() => setOpen(!open)} role="button">
         <div className={classes.contentWrapper}>
+          <div>
+            <Typography className={classes.upper}>Better than <span className={classes.eu}>EU</span></Typography>
+            <Typography className={classes.centered} variant="h3">35% <ArrowDropUpIcon className={classes.icon} /></Typography>
+          </div>
+          <div>
+            <Typography className={classes.upper}>Better than <span className={classes.eu}>FIN</span></Typography>
+            <Typography className={classes.centered} variant="h3">1% <ArrowDropUpIcon className={classes.icon} /></Typography>
+          </div>
           {content}
         </div>
         {open && (
           <div className={classes.contentWrapper}>
             {extraContent}
+            <TableContainer>
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <TableCell>Total on farm</TableCell>
+                    <TableCell align="right">Total of product</TableCell>
+                    <TableCell align="right">Wheat production</TableCell>
+                    <TableCell align="right">Industrial feed</TableCell>
+                    <TableCell align="right">Manure system</TableCell>
+                    <TableCell align="right">Energy</TableCell>
+                  </TableRow>
+                </TableHead>
+              </Table>
+            </TableContainer>
           </div>
         )}
       </Card>
