@@ -9,6 +9,7 @@
         "name": "Chicken minced meat",
         "weight": "400g",
         "description": "Chicken minced meat tastes very good",
+        "img": "chickenmincedmeat.jpg",
         "water": {
           "total": 2.2,
           "shipping": 1.3,
@@ -27,6 +28,7 @@
         "name": "Chicken nuggets",
         "weight": "300g",
         "description": "Chicken nuggets are a easy snack!",
+        "img": "chickennuggets.jpg",
         "water": {
           "total": 3.2,
           "shipping": 2.3,
@@ -45,6 +47,7 @@
         "name": "Pork minced meat",
         "weight": "450g",
         "description": "Pork minced meat is a good source of protein!",
+        "img": "porkmincedmeat.jpg",
         "water": {
           "total": 6.4,
           "shipping": 2.3,
@@ -63,6 +66,7 @@
         "name": "Ground beef",
         "weight": "550g",
         "description": "Ground beef is beef that has been finely chopped!",
+        "img": "groundbeef.png",
         "water": {
           "total": 7.4,
           "shipping": 2.8,
