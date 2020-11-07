@@ -1,8 +1,9 @@
-import { Grid, Typography, makeStyles } from '@material-ui/core';
+import { Grid, Typography, makeStyles, Avatar } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import useLocalStorage from '../hooks/useLocalStorage';
 import data from '../data/data.json';
 import ProductDescription from '../components/ProductDescription';
+import farmer from '../assets/images/farmer.jpg';
 
 const useStyles = makeStyles({
   container: {
@@ -14,7 +15,8 @@ const useStyles = makeStyles({
     height: '400px',
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'flex-start',
+    flexDirection: 'column',
     background: 'url(/images/jumbotron-bg.jpg)',
     backgroundSize: 'cover',
     color: '#fff'
@@ -34,6 +36,11 @@ const useStyles = makeStyles({
   },
   headerTypography: {
     padding: '0 20px'
+  },
+  avatar: {
+    margin: '20px',
+    height: '120px',
+    width: '120px',
   }
 });
 
@@ -44,12 +51,19 @@ function Main() {
   return (
     <>
       <Grid item xs={12} className={classes.headerGrid}>
-        <Typography variant="h4" align="center" className={classes.headerTypography}>
-          {`Welcome to resmeat™! Scan the QR of the product to see its responsibility factors`}
+        <Avatar src={farmer} className={classes.avatar} />
+        <Typography variant="h4" align="left" className={classes.headerTypography}>
+          {`Welcome back Herbert!`}
+        </Typography>
+        <Typography variant="h5" align="left" className={classes.headerTypography}>
+          {`Points this month: 37 points`}
+        </Typography>
+        <Typography variant="h6" align="left" className={classes.headerTypography}>
+          {`Leaderboard position: 74th`}
         </Typography>
       </Grid>
       <Grid item xs={12}>
-        <Typography variant="h5">{'Last scanned'}</Typography>
+        <Typography variant="h5">{'Last scanned products'}</Typography>
       </Grid>
       <div className={classes.width100}>
         {lastScanned.map((productId) => {
