@@ -43,10 +43,10 @@ function Main() {
         <Typography variant="h6">{'Last scanned'}</Typography>
       </Grid>
       <div>
-        {lastScanned.map((productid) => {
-          const farmId = productid.toString().charAt(0) - 1;
-          const productData = data[farmId]['products'][productid.toString().charAt(1) - 1];
-          return <ProductDescription product={productData} />;
+        {lastScanned.map((productId) => {
+          const farmId = productId.toString().charAt(0) - 1;
+          const productData = data[farmId]['products'][productId.toString().charAt(1) - 1];
+          return <ProductDescription key={productId} product={productData} />;
         })}
       </div>
     </>
