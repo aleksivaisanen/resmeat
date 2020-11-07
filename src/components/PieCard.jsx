@@ -39,9 +39,9 @@ export const PieCard = ({ data, content, extraContent, innerText }) => {
   const classes = useStyles({ open });
 
   return (
-    <div className={classes.container} onClick={() => setOpen(!open)} role="button">
+    <div className={classes.container}>
       <div className={classes.pie}><PieChart data={data} innerText={innerText} /></div>
-      <Card className={classes.cardContainer}>
+      <Card className={classes.cardContainer} onClick={() => setOpen(!open)} role="button">
         <div className={classes.contentWrapper}>
           {content}
         </div>

@@ -2,6 +2,7 @@ import { Grid } from '@material-ui/core';
 import { useParams } from 'react-router-dom';
 import FarmDescription from '../components/FarmDescription';
 import data from '../data/data.json';
+import PieCard from '../components/PieCard';
 
 function Product() {
   let { farmid } = useParams();

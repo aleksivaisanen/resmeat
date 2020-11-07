@@ -17,7 +17,8 @@ const useStyle = makeStyles(theme => ({
     position: 'absolute',
     top: '0',
     width: '100vw',
-    height: 'calc(100vh - 32px)',
+    minHeight: 'calc(100vh - 32px)',
+    height: '100%',
     background: theme.palette.primary.background
   },
   instruction: {
@@ -64,7 +65,7 @@ const QRReader = (props) => {
       )
     } else {
       return (
-        <Grid item xs={12} className={classes.grid}>
+        <Grid item xs={12} className={`qr-reader ${classes.grid}`}>
           <Typography variant="h4" align="center" className={classes.instruction}>
             {'Scan the QR code from the package'}
           </Typography>
