@@ -16,6 +16,16 @@ const useStyles = makeStyles({
   }
 })
 
+
+const scale = {
+  1: "D",
+  2: "C",
+  3: "B",
+  4: "A",
+  5: 'A+'
+}
+
+
 export const PieChart = ({ data, innerText }) => {
 
   const { containerRef, TooltipInPortal } = useTooltipInPortal({
@@ -67,10 +77,14 @@ export const PieChart = ({ data, innerText }) => {
               return pie.arcs.map((arc, index) => {
                 const [centroidX, centroidY] = pie.path.centroid(arc);
                 const hasSpaceForLabel = arc.endAngle - arc.startAngle >= 0.1;
-                const arcFill = ["#134074", "#fff"];
+                const arcFill = {
+                  welfare: "#ffcc30",
+                  water: "#457b9d",
+                  carbon: "#6A994E"
+                };
                 return (
                   <g key={`arc-${arc.data.value}-${index}`}>
-                    <path d={pie.path(arc)} fill={arcFill[index]}
+                    <path d={pie.path(arc)} fill={arcFill[arc.data.label]}
                       onMouseOver={(e) => handleMouseOver(e, arc.data)}
                       onMouseOut={hideTooltip}
                     />
@@ -84,7 +98,7 @@ export const PieChart = ({ data, innerText }) => {
                         textAnchor="middle"
                         pointerEvents="none"
                       >
-                        {arc.data.value}
+                        {scale[arc.data.value]}
                       </text>
                     )}
                   </g>
@@ -92,7 +106,7 @@ export const PieChart = ({ data, innerText }) => {
               })
             }}
           </Pie>
-          <text x="-25px" y="20px" className={classes.innerText}>{innerText}</text>
+          <text x={innerText === "A+" ? "-25px" : "-15px"} y="20px" className={classes.innerText}>{innerText}</text>
         </Group>
       </svg>
       {tooltipOpen && (
@@ -102,8 +116,8 @@ export const PieChart = ({ data, innerText }) => {
           top={tooltipTop}
           left={tooltipLeft}
         >
-          <div>label: {tooltipData.label}</div>
-          <div>label: {tooltipData.value}</div>
+          <div>{tooltipData.label}</div>
+          <div>{tooltipData.value}</div>
         </TooltipInPortal>
       )}
     </div>

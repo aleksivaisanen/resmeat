@@ -24,7 +24,7 @@ const theme = createMuiTheme({
     },
     MuiCard: {
       root: {
-        backgroundColor: '#FDF1EC',
+        backgroundColor: '#FFF',
         minHeight: '120px',
       },
     },
