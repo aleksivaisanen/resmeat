@@ -8,14 +8,14 @@ function Farm() {
   let { farmid } = useParams();
   const jsonData = data[farmid];
   return (
-    <Grid container xs={12} spacing={2}>
+    <>
       <Grid item xs={12}>
         <FarmDescription farm={jsonData} />
       </Grid>
       <Grid item xs={12}>
         <ProductCard />
       </Grid>
-    </Grid>
+    </>
   );
 }
 
