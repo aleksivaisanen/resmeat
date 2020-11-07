@@ -78,7 +78,7 @@ const QRReader = (props) => {
         <Fab
           className={classes.fab}
           color="primary"
-          onClick={() => setState({ ...state, readQR: true })}>
+          onClick={() => setState({ ...state, readQR: true, url: null })}>
           <CameraAltIcon />
         </Fab>
       );
