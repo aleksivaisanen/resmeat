@@ -11,12 +11,21 @@ const theme = createMuiTheme({
     },
   },
   overrides: {
+    MuiGrid: {
+      root: {
+        '&:not(:first-child)': {
+          '&:not(.MuiGrid-grid-xs-4)': {
+            '&:not(.qr-reader)': {
+              marginTop: "20px",
+            }
+          }
+        }
+      }
+    },
     MuiCard: {
       root: {
-        backgroundColor: '#FDF1EC',
+        backgroundColor: '#fff',
         minHeight: '120px',
-        marginTop: "40px",
-        paddingTop: "20px"
       },
     },
   },
