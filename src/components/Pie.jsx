@@ -26,8 +26,7 @@ const scale = {
 }
 
 
-export const PieChart = ({ data, innerText }) => {
-
+export const PieChart = ({ data, innerText, active, setActive }) => {
   const { containerRef, TooltipInPortal } = useTooltipInPortal({
     // use TooltipWithBounds
     detectBounds: true,
@@ -61,10 +60,33 @@ export const PieChart = ({ data, innerText }) => {
     });
   };
 
+  const handleActive = (key) => {
+    if (active === key) {
+      setActive(null);
+      return;
+    }
+    setActive(key)
+  }
+
   return (
     <div className={classes.container}>
       <svg width={250} height={250} ref={containerRef}>
         <Group top={125} left={125}>
+          <Pie
+            data={[{ value: 1 }]}
+            pieValue={p => p.value}
+            outerRadius={radius}
+          >
+            {(pie) => {
+              return pie.arcs.map((arc, index) => {
+                return (
+                  <g key={`arc-${arc.data.value}-${index}`}>
+                    <path d={pie.path(arc)} fill="white" />
+                  </g>
+                );
+              })
+            }}
+          </Pie>
           <Pie
             data={data}
             pieValue={d => d.value}
@@ -79,14 +101,15 @@ export const PieChart = ({ data, innerText }) => {
                 const hasSpaceForLabel = arc.endAngle - arc.startAngle >= 0.1;
                 const arcFill = {
                   welfare: "#ffcc30",
-                  water: "#457b9d",
-                  carbon: "#6A994E"
+                  water: "#6A994E",
+                  carbon: "#457b9d"
                 };
                 return (
                   <g key={`arc-${arc.data.value}-${index}`}>
                     <path d={pie.path(arc)} fill={arcFill[arc.data.label]}
                       onMouseOver={(e) => handleMouseOver(e, arc.data)}
                       onMouseOut={hideTooltip}
+                      onClick={() => handleActive(arc.data.label)}
                     />
                     {hasSpaceForLabel && (
                       <text
