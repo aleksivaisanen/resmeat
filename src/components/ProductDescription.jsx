@@ -35,7 +35,10 @@ const ProductDescription = (props) => {
       </div>
 
       <CardContent>
-        <Typography paragraph>{product.description}</Typography>
+        <Typography >{product.description}</Typography>
+        <Typography variant="subtitle2">
+          {`${Math.floor(Math.random() * 15) + 1} points collected`}
+        </Typography>
       </CardContent>
     </Card>
   );
