@@ -65,7 +65,7 @@ const Leaderboard = () => {
         <Typography variant="h6" className={classes.heading}>Monthly leaderboard</Typography>
         {scores.map(item => {
           return (
-            <>
+            <div key={item.place}>
               <Divider variant="fullWidth" component="li" />
               <ListItem>
                 <ListItemAvatar className={classes.listItemAvatar}>
@@ -75,7 +75,7 @@ const Leaderboard = () => {
                 </ListItemAvatar>
                 <ListItemText className={classes.text} primary={item.name} secondary={`${item.points} points`} />
               </ListItem>
-            </>
+            </div>
           )
         })}
       </List>

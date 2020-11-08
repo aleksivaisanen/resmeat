@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Typography, Modal, Backdrop, Fade } from '@material-ui/core';
-import QrReader from 'react-qr-reader';
-import { Fab } from '@material-ui/core';
+import { Grid, Typography, Modal, Backdrop, Fade, ListItem, ListItemText, Fab, ListItemIcon } from '@material-ui/core';
 import CameraAltIcon from '@material-ui/icons/CameraAlt';
 import CloseIcon from '@material-ui/icons/Close';
+import QrReader from 'react-qr-reader';
 import { Redirect } from 'react-router-dom';
 import useLocalStorage from '../hooks/useLocalStorage';
 
@@ -15,12 +14,6 @@ const useStyle = makeStyles((theme) => ({
     justifyContent: 'center',
     height: '100%',
   },
-  fab: {
-    position: 'fixed',
-    bottom: '20px',
-    right: '40px',
-    zIndex: 2,
-  },
   grid: {
     position: 'absolute',
     padding: '16px',
@@ -29,6 +22,16 @@ const useStyle = makeStyles((theme) => ({
   instruction: {
     margin: '20px 0',
   },
+  exitButton: {
+    backgroundColor: '#ff0000',
+    color: '#fff'
+  },
+  fab: {
+    position: 'absolute',
+    bottom: '40px',
+    right: '40px',
+    zIndex: 10
+  }
 }));
 
 const QRReader = (props) => {
@@ -73,16 +76,7 @@ const QRReader = (props) => {
   };
 
   const render = () => {
-    if (state.readQR === false) {
-      return (
-        <Fab
-          className={classes.fab}
-          color="primary"
-          onClick={() => setState({ ...state, readQR: true, url: null })}>
-          <CameraAltIcon />
-        </Fab>
-      );
-    } else {
+    if (state.readQR === true) {
       return (
         <Modal
           aria-labelledby="transition-modal-title"
@@ -105,10 +99,9 @@ const QRReader = (props) => {
                 onScan={handleScan}
                 style={{ width: '100%' }}
               />
-              <Fab
-                className={classes.fab}
-                color="primary"
-                onClick={() => setState({ ...state, readQR: false })}>
+              <Fab color="primary"
+                onClick={() => setState({ ...state, readQR: false, url: null })}
+                className={classes.fab}>
                 <CloseIcon />
               </Fab>
             </Grid>
@@ -122,6 +115,12 @@ const QRReader = (props) => {
     <>
       {state.url !== null && <Redirect to={`/product/${state.url}`} />}
       {render()}
+      <ListItem button key={'scan'} onClick={() => setState({ ...state, readQR: true, url: null })}>
+        <ListItemIcon>
+          <CameraAltIcon />
+        </ListItemIcon>
+        <ListItemText primary={'Scan QR code'} />
+      </ListItem>
     </>
   );
 };

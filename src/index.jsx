@@ -6,7 +6,7 @@ import theme from './theme';
 import Header from './components/Header';
 import Main from './views/Main';
 import Farm from './views/Farm';
-import QRReader from './components/QRReader';
+import Menu from './components/Menu';
 import Product from './views/Product';
 import Leaderboard from './components/Leaderboard';
 import * as serviceWorker from './serviceWorker';
@@ -34,7 +34,7 @@ function Page({ children }) {
       <Container maxWidth="sm" className={classes.container}>
         <Grid container className={classes.gridContainer}>
           {children}
-          <QRReader />
+          <Menu />
         </Grid>
       </Container>
     </div>
