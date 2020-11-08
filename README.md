@@ -2,7 +2,7 @@
 Team Dataatti submission for HK Scan challenge  
 Authors: Aleksi Väisänen, Matias Lappalainen and Petro Silenius
 
-Live demo can be found at [resmeat.com](resmeat.com).  
+Live demo can be found at [resmeat.com](http://resmeat.com).  
 The pitch can be found as a [Youtube video](https://youtu.be/WsdNUAvP6Es).
 
 ## How to run
