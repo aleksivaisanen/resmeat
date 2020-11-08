@@ -11,6 +11,7 @@ const useStyles = makeStyles({
     height: '150px',
     margin: '16px',
     marginTop: '-50px',
+    border: '1px solid gray',
   },
   headerContainer: {
     display: 'flex',
@@ -19,12 +20,12 @@ const useStyles = makeStyles({
     width: '70%',
   },
   CardContent: {
-    display: "flex",
-    justifyContent: "space-between"
+    display: 'flex',
+    justifyContent: 'space-between',
   },
   right: {
-    textAlign: "end"
-  }
+    textAlign: 'end',
+  },
 });
 
 const ProductDescription = (props) => {
@@ -42,7 +43,7 @@ const ProductDescription = (props) => {
       </div>
 
       <CardContent>
-        <Typography >{product.description}</Typography>
+        <Typography>{product.description}</Typography>
         <Typography variant="subtitle2">
           {`${Math.floor(Math.random() * 15) + 1} points collected`}
         </Typography>

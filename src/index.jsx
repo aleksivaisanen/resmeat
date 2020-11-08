@@ -8,7 +8,7 @@ import Main from './views/Main';
 import Farm from './views/Farm';
 import Menu from './components/Menu';
 import Product from './views/Product';
-import Leaderboard from './components/Leaderboard';
+import LeaderBoardView from './views/LeaderBoardView';
 import Minigame from './views/Minigame';
 import * as serviceWorker from './serviceWorker';
 
@@ -65,9 +65,9 @@ ReactDOM.render(
             <Product />
           </Page>
         </Route>
-        <Route path="/leaderboard/:productid/:gamescore">
+        <Route path="/leaderboard/:productid?/:gamescore?">
           <Page>
-            <Leaderboard />
+            <LeaderBoardView />
           </Page>
         </Route>
       </Switch>

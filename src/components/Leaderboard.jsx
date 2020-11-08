@@ -32,7 +32,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
   },
   card: {
-    width: '100%'
+    width: '100%',
+    marginBottom: '20px',
   }
 }));
 
