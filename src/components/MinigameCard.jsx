@@ -1,9 +1,14 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import { Card, Button, makeStyles, Typography } from "@material-ui/core";
 import { useHistory, useParams } from 'react-router-dom';
 import dayjs from 'dayjs';
+import ChickenSwing from './ChickenSwing';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
+  background: {
+    background: theme.palette.primary.main,
+    color: "white"
+  },
   centered: {
     display: "flex",
     justifyContent: "center",
@@ -11,19 +16,29 @@ const useStyles = makeStyles({
     flexWrap: 'wrap'
   },
   header: {
-    width: "100%",
+    width: "50%",
   },
   margin: {
-    margin: "16px"
+    margin: "16px",
+    textTransform: "inherit"
+  },
+  color: {
+    color: "white"
+  },
+  villenpuukotuspistejs: {
+    '& > .svg': {
+      width: '50px'
+    }
   }
-});
+
+}));
 
 export const MiniganeCard = ({ setDisplay }) => {
   const classes = useStyles();
   const history = useHistory();
   const { productid } = useParams();
 
-  const [time, setTime] = useState(60);
+  const [time, setTime] = useState(300);
   let timeout;
   const calculateTime = (end) => {
     timeout = setTimeout(() => {
@@ -38,7 +53,7 @@ export const MiniganeCard = ({ setDisplay }) => {
   }
 
   useEffect(() => {
-    const endTime = dayjs().add(1, "minute");
+    const endTime = dayjs().add(5, "minute");
     calculateTime(endTime);
     return () => {
       clearTimeout(timeout);
@@ -47,12 +62,15 @@ export const MiniganeCard = ({ setDisplay }) => {
   }, [])
 
   return (
-    <Card className={classes.centered}>
+    <Card className={`${classes.centered} ${classes.background}`}>
       <div className={`${classes.header} ${classes.margin}`}>
-        <Typography variant="h4">Earn extra points</Typography>
+        <Typography variant="h6">Compensate your carbon footprint in {Math.floor(time / 60)}:{time % 60 < 10 ? '0' : ""}{time % 60} minutes, and earn extra points</Typography>
       </div>
-      <Button size="large" variant="outlined" className={classes.margin} onClick={() => { history.push(`/game/${productid}`) }}>
-        <Typography variant="h4">{Math.floor(time / 60)}:{time % 60 < 10 ? '0' : ""}{time % 60} Min</Typography>
+      <div className={classes.villenpuukotuspistejs}>
+        <ChickenSwing rotation={0} />
+      </div>
+      <Button size="large" variant="contained" className={classes.margin} onClick={() => { history.push(`/game/${productid}`) }}>
+        <Typography variant="h5">Spin the chicken!</Typography>
       </Button>
     </Card>
   )
