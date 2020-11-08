@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Button, Card, makeStyles } from '@material-ui/core';
+import { Button, Card, makeStyles, Typography } from '@material-ui/core';
 import { Link, useParams } from 'react-router-dom';
 import ChickenSwing from '../components/ChickenSwing';
 import dayjs from 'dayjs';
@@ -84,13 +84,16 @@ function Minigame() {
       }>
       <div className={classes.grid}>
         <div className={classes.swing}>
-          <p className={classes.timer}>
+          <div className={classes.timer}>
+            {!playing && rotation === 0 && (
+              <Typography variant="body1">Tap tap to make the chicken spin!</Typography>
+            )}
             {time > 0
               ? Math.floor((time / 1000) % 60) +
                 ':' +
                 (time % 100 < 10 ? '0' + (time % 100) : time % 100)
               : '00:00'}
-          </p>
+          </div>
           <ChickenSwing rotation={rotation} />
           {!playing && time <= 0 && (
             <Card className={classes.results}>
