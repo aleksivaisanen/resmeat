@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Card, Button, makeStyles, Typography } from "@material-ui/core";
+import { useHistory, useParams } from 'react-router-dom';
 import dayjs from 'dayjs';
 
 const useStyles = makeStyles({
@@ -19,6 +20,8 @@ const useStyles = makeStyles({
 
 export const MiniganeCard = ({ setDisplay }) => {
   const classes = useStyles();
+  const history = useHistory();
+  const { productid } = useParams();
 
   const [time, setTime] = useState(60);
   let timeout;
@@ -47,7 +50,7 @@ export const MiniganeCard = ({ setDisplay }) => {
       <div className={`${classes.header} ${classes.margin}`}>
         <Typography variant="h4">Earn extra points</Typography>
       </div>
-      <Button size="large" variant="outlined" className={classes.margin}>
+      <Button size="large" variant="outlined" className={classes.margin} onClick={() => { history.push(`/game/${productid}`) }}>
         <Typography variant="h4">{Math.floor(time / 60)}:{time % 60 < 10 ? '0' : ""}{time % 60} Min</Typography>
       </Button>
     </Card>
