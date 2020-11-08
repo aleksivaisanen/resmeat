@@ -4,6 +4,7 @@ import useLocalStorage from '../hooks/useLocalStorage';
 import data from '../data/data.json';
 import ProductDescription from '../components/ProductDescription';
 import farmer from '../assets/images/farmer.jpg';
+import { ScanQrCard } from '../components/ScanQrCard';
 
 const useStyles = makeStyles({
   container: {
@@ -60,6 +61,9 @@ function Main() {
         <Typography variant="h6" align="left" className={classes.headerTypography}>
           {`Leaderboard position: 74th`}
         </Typography>
+      </Grid>
+      <Grid item xs={12}>
+        <ScanQrCard />
       </Grid>
       <Grid item xs={12}>
         <Typography variant="h5">{'Last collected products'}</Typography>
