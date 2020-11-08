@@ -1,4 +1,4 @@
-# Junction 2020 Connected
+# Junction 2020 Connected - resmeat™
 Team Dataatti submission for HK Scan challenge  
 Authors: Aleksi Väisänen, Matias Lappalainen and Petro Silenius
 
