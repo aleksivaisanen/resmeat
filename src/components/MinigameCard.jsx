@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Card, Button, makeStyles, Typography } from "@material-ui/core";
 import { useHistory, useParams } from 'react-router-dom';
 import dayjs from 'dayjs';
@@ -43,6 +43,7 @@ export const MiniganeCard = ({ setDisplay }) => {
     return () => {
       clearTimeout(timeout);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
