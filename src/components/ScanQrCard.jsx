@@ -1,8 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Card, Button, makeStyles, Typography } from '@material-ui/core';
-import { useHistory, useParams } from 'react-router-dom';
-import dayjs from 'dayjs';
-import ChickenSwing from './ChickenSwing';
+import QRReader from './QRReader';
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -29,18 +27,22 @@ const useStyles = makeStyles((theme) => ({
 
 export const ScanQrCard = () => {
   const classes = useStyles();
+  const [QROpen, setQROpen] = useState(false);
 
   return (
-    <Card className={`${classes.centered} ${classes.background}`}>
-      <div className={`${classes.header} ${classes.margin}`}>
-        <Typography variant="h6">
-          Scan a new product to collect more points and minimize your carbon footprint
+    <>
+      <QRReader open={QROpen} setQROpen={setQROpen} />
+      <Card className={`${classes.centered} ${classes.background}`}>
+        <div className={`${classes.header} ${classes.margin}`}>
+          <Typography variant="h6">
+            Scan a new product to collect more points and minimize your carbon footprint
         </Typography>
-      </div>
-      <Button size="large" variant="contained" className={classes.margin}>
-        <Typography variant="h5">Scan QR</Typography>
-      </Button>
-    </Card>
+        </div>
+        <Button size="large" variant="contained" className={classes.margin} onClick={() => setQROpen(true)}>
+          <Typography variant="h5">Scan QR</Typography>
+        </Button>
+      </Card>
+    </>
   );
 };
 
