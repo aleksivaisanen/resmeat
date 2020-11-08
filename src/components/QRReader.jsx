@@ -53,6 +53,7 @@ const QRReader = (props) => {
       ) !== null &&
       data.includes('https://resmeat.com')
     ) {
+      props.setQROpen(false)
       const productId = Number(data.split('/').pop());
       setState({
         ...state,
