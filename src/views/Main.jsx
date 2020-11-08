@@ -19,7 +19,7 @@ const useStyles = makeStyles({
     flexDirection: 'column',
     background: 'url(/images/jumbotron-bg.jpg)',
     backgroundSize: 'cover',
-    color: '#fff'
+    color: '#fff',
   },
   headerImg: {
     marginTop: '20px',
@@ -35,18 +35,18 @@ const useStyles = makeStyles({
     marginBottom: '20px',
   },
   headerTypography: {
-    padding: '0 20px'
+    padding: '0 20px',
   },
   avatar: {
     margin: '20px',
     height: '120px',
     width: '120px',
-  }
+  },
 });
 
 function Main() {
   const classes = useStyles();
-  const [lastScanned,] = useLocalStorage('last_scanned', [11, 12, 23]);
+  const [lastScanned] = useLocalStorage('last_scanned', [11, 12, 23]);
   return (
     <>
       <Grid item xs={12} className={classes.headerGrid}>
@@ -62,7 +62,7 @@ function Main() {
         </Typography>
       </Grid>
       <Grid item xs={12}>
-        <Typography variant="h5">{'Last scanned products'}</Typography>
+        <Typography variant="h5">{'Last collected products'}</Typography>
       </Grid>
       <div className={classes.width100}>
         {lastScanned.map((productId) => {
