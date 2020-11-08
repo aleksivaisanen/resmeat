@@ -18,6 +18,13 @@ const useStyles = makeStyles({
   cardHeader: {
     width: '70%',
   },
+  CardContent: {
+    display: "flex",
+    justifyContent: "space-between"
+  },
+  right: {
+    textAlign: "end"
+  }
 });
 
 const ProductDescription = (props) => {
