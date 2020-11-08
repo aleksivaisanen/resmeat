@@ -2,6 +2,14 @@
 Team Dataatti submission for HK Scan challenge  
 Authors: Aleksi Väisänen, Matias Lappalainen and Petro Silenius
 
+## How to run
+Clone the repo and :
+```
+cd resmeat
+npm install
+npm start
+```
+
 ## Idea
 Our idea is to make responsible choices more fun. With our engaging application called resmeat, consumers are able to further compensate their carbon footprint after choosing responsible local meat. The application name originates from responsible meat.
 
