@@ -1,70 +1,14 @@
-# Getting Started with Create React App
+# Idea
+Our idea is to make responsible choices more fun. With our engaging application called resmeat, consumers are able to further compensate their carbon footprint after choosing responsible local meat. The application name originates from responsible meat.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Consumers scan a QR code from a bought product, which gives them points based on the responsibility and ecofriendliness of the product. After scanning the QR code, the consumer plays a minigame “Spin the Chicken” which is a fun and engaging game.
 
-## Available Scripts
+# Gamification
+The minigame allows users to compensate for their products' carbon emissions. HKScan executes the emission compensations that the users have earned. The minigame engages the consumer and makes them want to return to the application after each purchase. The original idea for the minigame was to scale it according to the product emissions so it would demonstrate the environmental impact but this wasn’t feasible due to the schedule.
 
-In the project directory, you can run:
+The total points of the product come from its responsibility factors as well as from the game success. Consumers get points from each product scan and then an average is calculated from these. Players are placed on the leaderboard based on their monthly scores and top players are awarded with - for example - music festival tickets, which excites and brings more young users. The gamification encourages consumers to a more environmentally aware lifestyle and provides a way for them to track their progress as well as compare themselves to others.
 
-### `npm start`
+# Values
+resmeat brings value to both consumers and HKScan. Customers receive important information about the carbon footprint of their choices and compete for monthly prizes. Making more responsible choices gives more points, thus making top of the leaderboard more achievable by responsible consumers. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+HKScan receives information of the users and their shopping history based on the scanned products. resmeat provides information especially from the customers’ interests towards the responsibility of the meat production and their activity in the application. This data can be used to measure HKScan marketing success since successful advertisements about the topic increase the current usage. Let’s make responsible choices fun together! 
