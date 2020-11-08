@@ -47,7 +47,6 @@ function Minigame() {
   const [time, setTime] = useState(10000);
   const classes = useStyles();
   const { productid } = useParams();
-  console.log(rotation);
 
   let timeout;
   const calculateTime = (end) => {
@@ -90,8 +89,8 @@ function Minigame() {
             )}
             {time > 0
               ? Math.floor((time / 1000) % 60) +
-                ':' +
-                (time % 100 < 10 ? '0' + (time % 100) : time % 100)
+              ':' +
+              (time % 100 < 10 ? '0' + (time % 100) : time % 100)
               : '00:00'}
           </div>
           <ChickenSwing rotation={rotation} />

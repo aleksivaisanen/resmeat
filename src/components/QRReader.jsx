@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Typography, Modal, Backdrop, Fade, Fab } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
