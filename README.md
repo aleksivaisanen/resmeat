@@ -1,5 +1,5 @@
 # Junction 2020 Connected
-Team Dataatti submission for HK Scan challenge
+Team Dataatti submission for HK Scan challenge  
 Authors: Aleksi Väisänen, Matias Lappalainen and Petro Silenius
 
 ## Idea
