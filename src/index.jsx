@@ -9,6 +9,7 @@ import Farm from './views/Farm';
 import Menu from './components/Menu';
 import Product from './views/Product';
 import Leaderboard from './components/Leaderboard';
+import Minigame from './views/Minigame';
 import * as serviceWorker from './serviceWorker';
 
 const useStyles = makeStyles({
@@ -46,20 +47,29 @@ ReactDOM.render(
     <CssBaseline />
     <Router>
       <Switch>
-        <Page>
-          <Route exact path="/">
+        <Route exact path="/">
+          <Page>
             <Main />
-          </Route>
-          <Route path="/farm/:farmid">
+          </Page>
+        </Route>
+        <Route path="/game/:productid">
+          <Minigame />
+        </Route>
+        <Route path="/farm/:farmid">
+          <Page>
             <Farm />
-          </Route>
-          <Route path="/product/:productid">
+          </Page>
+        </Route>
+        <Route path="/product/:productid">
+          <Page>
             <Product />
-          </Route>
-          <Route path="/leaderboard">
+          </Page>
+        </Route>
+        <Route path="/leaderboard/:productid/:gamescore">
+          <Page>
             <Leaderboard />
-          </Route>
-        </Page>
+          </Page>
+        </Route>
       </Switch>
     </Router>
   </ThemeProvider>,
