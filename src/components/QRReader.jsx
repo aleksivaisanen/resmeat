@@ -1,7 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Typography, Modal, Backdrop, Fade, ListItem, ListItemText, Fab, ListItemIcon } from '@material-ui/core';
-import CameraAltIcon from '@material-ui/icons/CameraAlt';
+import { Grid, Typography, Modal, Backdrop, Fade, Fab } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
 import QrReader from 'react-qr-reader';
 import { Redirect } from 'react-router-dom';
@@ -39,7 +38,6 @@ const useStyle = makeStyles((theme) => ({
 const QRReader = (props) => {
   const initialState = {
     id: null,
-    readQR: false,
     error: false,
     url: null,
   };
@@ -58,7 +56,6 @@ const QRReader = (props) => {
       const productId = Number(data.split('/').pop());
       setState({
         ...state,
-        readQR: false,
         url: productId,
       });
       if (!lastScanned.includes(productId)) {
@@ -77,47 +74,35 @@ const QRReader = (props) => {
     console.log('error', err);
   };
 
-  const render = () => {
-    if (state.readQR === true) {
-      return (
-        <Modal
-          aria-labelledby="transition-modal-title"
-          aria-describedby="transition-modal-description"
-          className={classes.modal}
-          open={state.readQR}
-          closeAfterTransition
-          BackdropComponent={Backdrop}
-          BackdropProps={{
-            timeout: 500,
-          }}>
-          <Fade in={state.readQR}>
-            <Grid item xs={12} className={`qr-reader ${classes.grid}`}>
-              <Typography variant="h4" align="center" className={classes.instruction}>
-                {'Scan the QR code from the package'}
-              </Typography>
-              <QrReader
-                delay={300}
-                onError={handleError}
-                onScan={handleScan}
-                style={{ width: '100%' }}
-              />
-            </Grid>
-          </Fade>
-        </Modal>
-      );
-    }
-  };
-
   return (
     <>
       {state.url !== null && <Redirect to={`/product/${state.url}`} />}
-      {render()}
-      <ListItem button key={'scan'} onClick={() => { setState({ ...state, readQR: true, url: null }) }}>
-        <ListItemIcon>
-          <CameraAltIcon />
-        </ListItemIcon>
-        <ListItemText primary={'Scan QR code'} />
-      </ListItem>
+      <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        className={classes.modal}
+        open={props.open}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}>
+        <Fade in={props.open}>
+          <Grid item xs={12} className={`qr-reader ${classes.grid}`}>
+            <Typography variant="h4" align="center" className={classes.instruction}>
+              {'Scan the QR code from the package'}
+            </Typography>
+            <QrReader
+              delay={300}
+              onError={handleError}
+              onScan={handleScan}
+              style={{ width: '100%' }}
+            />
+            <Fab onClick={() => props.setQROpen(false)} className={classes.fab}><CloseIcon /></Fab>
+          </Grid>
+        </Fade>
+      </Modal>
+
     </>
   );
 };

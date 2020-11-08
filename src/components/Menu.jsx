@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Fab, Drawer, List, ListItem, ListItemText, Divider, ListItemIcon } from '@material-ui/core';
 import AssessmentIcon from '@material-ui/icons/Assessment';
 import HomeIcon from '@material-ui/icons/Home';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
+import CameraAltIcon from '@material-ui/icons/CameraAlt';
 import QRReader from './QRReader';
 
 const useStyle = makeStyles((theme) => ({
@@ -22,6 +23,11 @@ const useStyle = makeStyles((theme) => ({
 const Menu = () => {
   const classes = useStyle();
   const [open, setOpen] = useState(false);
+  const [QROpen, setQROpen] = useState(false);
+
+  useEffect(() => {
+
+  },[])
 
   const MenuFab = () => {
     if (open === true) {
@@ -41,6 +47,7 @@ const Menu = () => {
 
   return (
     <>
+      <QRReader open={QROpen} setQROpen={setQROpen} />
       <MenuFab />
       <Drawer anchor={'right'} open={open} onClose={() => setOpen(false)}>
         <List className={classes.list}>
@@ -51,7 +58,12 @@ const Menu = () => {
             <ListItemText primary={'Home'} />
           </ListItem>
           <Divider variant="fullWidth" component="li" />
-          <QRReader />
+          <ListItem button key={'scan'} onClick={() => { setQROpen(true); setOpen(false) }}>
+            <ListItemIcon>
+              <CameraAltIcon />
+            </ListItemIcon>
+            <ListItemText primary={'Scan QR code'} />
+          </ListItem>
           <Divider variant="fullWidth" component="li" />
           <ListItem button component="a" href="/leaderboard" key={'leaderboard'}>
             <ListItemIcon>
