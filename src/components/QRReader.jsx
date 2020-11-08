@@ -13,11 +13,13 @@ const useStyle = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'center',
     height: '100%',
+
   },
   grid: {
     position: 'absolute',
     padding: '16px',
     background: theme.palette.primary.background,
+    zIndex: 20000
   },
   instruction: {
     margin: '20px 0',
@@ -30,7 +32,7 @@ const useStyle = makeStyles((theme) => ({
     position: 'absolute',
     bottom: '40px',
     right: '40px',
-    zIndex: 10
+    zIndex: 20001
   }
 }));
 
@@ -99,11 +101,6 @@ const QRReader = (props) => {
                 onScan={handleScan}
                 style={{ width: '100%' }}
               />
-              <Fab color="primary"
-                onClick={() => setState({ ...state, readQR: false, url: null })}
-                className={classes.fab}>
-                <CloseIcon />
-              </Fab>
             </Grid>
           </Fade>
         </Modal>
@@ -115,7 +112,7 @@ const QRReader = (props) => {
     <>
       {state.url !== null && <Redirect to={`/product/${state.url}`} />}
       {render()}
-      <ListItem button key={'scan'} onClick={() => setState({ ...state, readQR: true, url: null })}>
+      <ListItem button key={'scan'} onClick={() => { setState({ ...state, readQR: true, url: null }) }}>
         <ListItemIcon>
           <CameraAltIcon />
         </ListItemIcon>
