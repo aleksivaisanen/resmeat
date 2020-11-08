@@ -7,9 +7,9 @@
     "products": [
       {
         "id": 11,
-        "name": "Chicken minced meat",
+        "name": "Kariniemen Kananpojan Jauheliha",
         "weight": "400g",
-        "description": "Chicken minced meat tastes very good",
+        "description": "Kariniemen Kananpojan Jauheliha tastes very good",
         "img": "chickenmincedmeat.jpg",
         "water": {
           "total": 2.2,
@@ -27,9 +27,9 @@
       },
       {
         "id": 12,
-        "name": "Chicken nuggets",
+        "name": "Kariniemen Kanaset® Frittikanaa",
         "weight": "300g",
-        "description": "Chicken nuggets are a easy snack!",
+        "description": "Kariniemen Kanaset® Frittikanaa are a easy snack!",
         "img": "chickennuggets.jpg",
         "water": {
           "total": 3.2,
@@ -47,9 +47,9 @@
       },
       {
         "id": 13,
-        "name": "Pork minced meat",
-        "weight": "450g",
-        "description": "Pork minced meat is a good source of protein!",
+        "name": "HK Viljaporsas-Nauta jauheliha",
+        "weight": "400g",
+        "description": "HK Viljaporsas-Nauta jauheliha is a good source of protein!",
         "img": "porkmincedmeat.jpg",
         "water": {
           "total": 6.4,
@@ -67,9 +67,9 @@
       },
       {
         "id": 14,
-        "name": "Ground beef",
-        "weight": "550g",
-        "description": "Ground beef is beef that has been finely chopped!",
+        "name": "HK Naudan jauheliha",
+        "weight": "400g",
+        "description": "HK Naudan jauheliha is beef that has been finely chopped!",
         "img": "groundbeef.png",
         "water": {
           "total": 7.4,
@@ -137,9 +137,9 @@
     "products": [
       {
         "id": 21,
-        "name": "Chicken minced meat",
+        "name": "Kariniemen Kananpojan Jauheliha",
         "weight": "400g",
-        "description": "Chicken minced meat tastes very good",
+        "description": "Kariniemen Kananpojan Jauheliha tastes very good",
         "img": "chickenmincedmeat.jpg",
         "water": {
           "total": 2.2,
@@ -157,9 +157,9 @@
       },
       {
         "id": 22,
-        "name": "Chicken nuggets",
+        "name": "Kariniemen Kanaset® Frittikanaa",
         "weight": "300g",
-        "description": "Chicken nuggets are a easy snack!",
+        "description": "Kariniemen Kanaset® Frittikanaa are a easy snack!",
         "img": "chickennuggets.jpg",
         "water": {
           "total": 3.2,
@@ -177,9 +177,9 @@
       },
       {
         "id": 23,
-        "name": "Pork minced meat",
-        "weight": "450g",
-        "description": "Pork minced meat is a good source of protein!",
+        "name": "HK Viljaporsas-Nauta jauheliha",
+        "weight": "400g",
+        "description": "HK Viljaporsas-Nauta jauheliha is a good source of protein!",
         "img": "porkmincedmeat.jpg",
         "water": {
           "total": 6.4,
@@ -197,9 +197,9 @@
       },
       {
         "id": 24,
-        "name": "Ground beef",
-        "weight": "550g",
-        "description": "Ground beef is beef that has been finely chopped!",
+        "name": "HK Naudan jauheliha",
+        "weight": "400g",
+        "description": "HK Naudan jauheliha is beef that has been finely chopped!",
         "img": "groundbeef.png",
         "water": {
           "total": 7.4,
@@ -267,9 +267,9 @@
     "products": [
       {
         "id": 31,
-        "name": "Chicken minced meat",
+        "name": "Kariniemen Kananpojan Jauheliha",
         "weight": "400g",
-        "description": "Chicken minced meat tastes very good",
+        "description": "Kariniemen Kananpojan Jauheliha tastes very good",
         "img": "chickenmincedmeat.jpg",
         "water": {
           "total": 2.2,
@@ -287,9 +287,9 @@
       },
       {
         "id": 32,
-        "name": "Chicken nuggets",
+        "name": "Kariniemen Kanaset® Frittikanaa",
         "weight": "300g",
-        "description": "Chicken nuggets are a easy snack!",
+        "description": "Kariniemen Kanaset® Frittikanaa are a easy snack!",
         "img": "chickennuggets.jpg",
         "water": {
           "total": 3.2,
@@ -307,9 +307,9 @@
       },
       {
         "id": 33,
-        "name": "Pork minced meat",
-        "weight": "450g",
-        "description": "Pork minced meat is a good source of protein!",
+        "name": "HK Viljaporsas-Nauta jauheliha",
+        "weight": "400g",
+        "description": "HK Viljaporsas-Nauta jauheliha is a good source of protein!",
         "img": "porkmincedmeat.jpg",
         "water": {
           "total": 6.4,
@@ -327,9 +327,9 @@
       },
       {
         "id": 34,
-        "name": "Ground beef",
-        "weight": "550g",
-        "description": "Ground beef is beef that has been finely chopped!",
+        "name": "HK Naudan jauheliha",
+        "weight": "400g",
+        "description": "HK Naudan jauheliha is beef that has been finely chopped!",
         "img": "groundbeef.png",
         "water": {
           "total": 7.4,
@@ -397,9 +397,9 @@
     "products": [
       {
         "id": 41,
-        "name": "Chicken minced meat",
+        "name": "Kariniemen Kananpojan Jauheliha",
         "weight": "400g",
-        "description": "Chicken minced meat tastes very good",
+        "description": "Kariniemen Kananpojan Jauheliha tastes very good",
         "img": "chickenmincedmeat.jpg",
         "water": {
           "total": 2.2,
@@ -417,9 +417,9 @@
       },
       {
         "id": 42,
-        "name": "Chicken nuggets",
+        "name": "Kariniemen Kanaset® Frittikanaa",
         "weight": "300g",
-        "description": "Chicken nuggets are a easy snack!",
+        "description": "Kariniemen Kanaset® Frittikanaa are a easy snack!",
         "img": "chickennuggets.jpg",
         "water": {
           "total": 3.2,
@@ -437,9 +437,9 @@
       },
       {
         "id": 43,
-        "name": "Pork minced meat",
-        "weight": "450g",
-        "description": "Pork minced meat is a good source of protein!",
+        "name": "HK Viljaporsas-Nauta jauheliha",
+        "weight": "400g",
+        "description": "HK Viljaporsas-Nauta jauheliha is a good source of protein!",
         "img": "porkmincedmeat.jpg",
         "water": {
           "total": 6.4,
@@ -457,9 +457,9 @@
       },
       {
         "id": 44,
-        "name": "Ground beef",
-        "weight": "550g",
-        "description": "Ground beef is beef that has been finely chopped!",
+        "name": "HK Naudan jauheliha",
+        "weight": "400g",
+        "description": "HK Naudan jauheliha is beef that has been finely chopped!",
         "img": "groundbeef.png",
         "water": {
           "total": 7.4,

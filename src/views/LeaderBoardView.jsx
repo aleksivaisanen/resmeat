@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import Leaderboard from '../components/Leaderboard';
 import { Card, makeStyles, Typography } from '@material-ui/core';
 import ProductDescription from '../components/ProductDescription';
@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
   },
   recommendation: {
     marginTop: '20px',
+  },
+  link: {
+    textDecoration: 'none',
   },
 }));
 
@@ -35,7 +38,9 @@ function LeaderBoardView() {
         <Typography variant="body1" className={classes.recommendation}>
           <b>Next time you could consider getting a more responsible product like:</b>
         </Typography>
-        <ProductDescription product={productData} />
+        <Link to={`/product/${productid}`} className={classes.link}>
+          <ProductDescription product={productData} />
+        </Link>
       </Card>
     );
   };
