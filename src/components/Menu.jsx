@@ -4,6 +4,7 @@ import { Fab, Drawer, List, ListItem, ListItemText, Divider, ListItemIcon } from
 import AssessmentIcon from '@material-ui/icons/Assessment';
 import HomeIcon from '@material-ui/icons/Home';
 import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
 import QRReader from './QRReader';
 
 const useStyle = makeStyles((theme) => ({
@@ -11,6 +12,7 @@ const useStyle = makeStyles((theme) => ({
     position: 'fixed',
     bottom: '20px',
     right: '20px',
+    zIndex: 10000
   },
   list: {
     width: '300px'
@@ -20,11 +22,26 @@ const useStyle = makeStyles((theme) => ({
 const Menu = () => {
   const classes = useStyle();
   const [open, setOpen] = useState(false);
+
+  const MenuFab = () => {
+    if (open === true) {
+      return (
+        <Fab color='primary' onClick={() => setOpen(false)} className={classes.fab}>
+          <CloseIcon />
+        </Fab>
+      )
+    } else {
+      return (
+        <Fab color='primary' onClick={() => setOpen(true)} className={classes.fab}>
+          <MenuIcon />
+        </Fab>
+      )
+    }
+  }
+
   return (
     <>
-      <Fab color='primary' onClick={() => setOpen(true)} className={classes.fab}>
-        <MenuIcon />
-      </Fab>
+      <MenuFab />
       <Drawer anchor={'right'} open={open} onClose={() => setOpen(false)}>
         <List className={classes.list}>
           <ListItem button component="a" href="/" key={'home'}>
