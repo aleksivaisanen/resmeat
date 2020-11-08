@@ -41,8 +41,11 @@ const ProductDescription = (props) => {
         <Avatar src={`/images/${product.img}`} className={classes.avatar} />
       </div>
 
-      <CardContent className={classes.CardContent}>
-        <Typography paragraph>{product.description}</Typography>
+      <CardContent>
+        <Typography >{product.description}</Typography>
+        <Typography variant="subtitle2">
+          {`${Math.floor(Math.random() * 15) + 1} points collected`}
+        </Typography>
       </CardContent>
     </Card>
   );

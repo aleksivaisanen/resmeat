@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { makeStyles, Card, Typography, TableContainer, TableHead, Table, TableRow, TableCell } from '@material-ui/core';
 import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 import PieChart from "./Pie"
-import { useParams, useLocation } from 'react-router-dom';
 
 const useStyles = makeStyles({
   container: {
@@ -59,8 +58,6 @@ const scale = {
 }
 
 export const PieCard = ({ data, content, extraContent }) => {
-  const { pathname } = useLocation();
-  const { farmid, productid } = useParams();
 
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(null);
