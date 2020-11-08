@@ -44,7 +44,7 @@ function Header() {
           <Avatar src={farmer} className={classes.avatar} />
           <div className={classes.typographyContainer}>
             <Typography variant="body1">
-              {'Herbert McDonald'}
+              {'Herbert'}
             </Typography>
             <Typography variant="caption">
               {'37 points'}
