@@ -39,8 +39,7 @@ const useStyles = makeStyles({
 
 function Main() {
   const classes = useStyles();
-  const [lastScanned, setLocalStorage] = useLocalStorage('last_scanned', []);
-  lastScanned.length === 0 && setLocalStorage([11, 12, 23]);
+  const [lastScanned,] = useLocalStorage('last_scanned', [11, 12, 23]);
   return (
     <>
       <Grid item xs={12} className={classes.headerGrid}>

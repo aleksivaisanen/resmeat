@@ -18,6 +18,13 @@ const useStyles = makeStyles({
   cardHeader: {
     width: '70%',
   },
+  CardContent: {
+    display: "flex",
+    justifyContent: "space-between"
+  },
+  right: {
+    textAlign: "end"
+  }
 });
 
 const ProductDescription = (props) => {
@@ -34,7 +41,7 @@ const ProductDescription = (props) => {
         <Avatar src={`/images/${product.img}`} className={classes.avatar} />
       </div>
 
-      <CardContent>
+      <CardContent className={classes.CardContent}>
         <Typography paragraph>{product.description}</Typography>
       </CardContent>
     </Card>
